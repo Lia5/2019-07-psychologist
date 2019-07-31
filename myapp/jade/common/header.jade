@@ -1,10 +1,10 @@
-header
-	nav
-		.wrap
+.wrap
+	header(style="background-image: url('assets/img/header-bg.jpg')")
+		nav
 			.nav
-				.logo
-					.logo__icon
-					.logo__text Castle
+				.lang
+					.leng__text RU
+					.leng__wrap
 				.menu-wrap
 					.menu-toggle 
 						.one
@@ -14,18 +14,38 @@ header
 					nav.main-menu 
 						ul
 							li
-								a(href="#") Orders
+								a(href="#" data-menuAnchor="#calc") Биография
 							li
-								a(href="#") Transactions
+								a(href="#" data-menuAnchor="#history") Консультации
 							li
-								a(href="#") Users
-				.reg
-					.reg__notification Notification
-					.login 
-						.login__text Account
-						.login__icon
-						
-
-
+								a(href="#" data-menuAnchor="#ideal") Дипломы
+							li.logo
+								a(href="#" data-menuAnchor="#ideal") AnnaMakarova
+							li
+								a(href="#" data-menuAnchor="#notes") Мероприятия
+							li
+								a(href="#" data-menuAnchor="#notes") Видео
+							li
+								a(href="#" data-menuAnchor="#contacts") Контакты
+				.social
+					a(href="#").social__icon
+						img(src="assets/img/icons/phone.svg", alt="phone")
+					a(href="#").social__icon
+						img(src="assets/img/icons/mail.svg", alt="mail")
 		.header
-			
+			.header__wrap
+				h1.main-title Анна Макарова
+				.subtitle клинический психолог
+		.header-bottom 
+			.social
+				a(href="#").social__icon
+					img(src="assets/img/icons/fb.svg", alt="mail")
+				a(href="#").social__icon
+					img(src="assets/img/icons/youtube.svg", alt="mail")
+				a(href="#").social__icon
+					img(src="assets/img/icons/insta.svg", alt="mail")
+			a(href="#").btn-scroll Scroll
+			a(href="#").download-viz
+				.download-viz__text Загрузить визитку
+				.social__icon
+					img(src="assets/img/icons/icon_user.svg", alt="icon_user")

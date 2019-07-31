@@ -1,0 +1,64 @@
+.consult {
+    .subtitle {
+        text-align: center;
+    }
+    &__body {
+        display: flex;
+        padding: 90px 195px 0 302px;
+    }
+    &__about {
+        width: 50%;
+        p {
+            color: #9C9C9C;
+            margin: 0;
+        }
+    }
+    &__cite {
+        display: flex;
+    }
+    &__text {
+        font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 25px;
+        line-height: 1.74;
+        letter-spacing: 0.01em;
+    }
+    &__position  {
+        padding-left: 0;
+        list-style-type: decimal; 
+        list-style-position: inside; 
+        li {
+            list-style-type: decimal; 
+            list-style-position: inside; 
+        }
+    }
+    &__tabs {
+        width: 50%;
+        .tabs__caption {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #9C9C9C;
+            li {
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -20px;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: #97DFEC;
+                }
+                &.active {
+                    color: $text;
+                }
+            }
+        }
+    }
+}

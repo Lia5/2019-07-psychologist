@@ -7,18 +7,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <meta name="keywords" content="Теги сайта">
     <meta name="description" content="Описание сайта">
-    <meta name="author" lang="ru" content="Helen Portna">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
     <title>Document </title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="wrap">
+    <div class="wrap">
+      <header style="background-image: url('assets/img/header-bg.jpg')">
+        <nav>
           <div class="nav">
-            <div class="logo">
-              <div class="logo__icon"></div>
-              <div class="logo__text">Castle</div>
+            <div class="lang">
+              <div class="leng__text">RU</div>
+              <div class="leng__wrap"></div>
             </div>
             <div class="menu-wrap">
               <div class="menu-toggle"> 
@@ -28,56 +27,116 @@
               </div>
               <nav class="main-menu"> 
                 <ul>
-                  <li><a href="#">Orders</a></li>
-                  <li><a href="#">Transactions</a></li>
-                  <li><a href="#">Users</a></li>
+                  <li><a href="#" data-menuAnchor="#calc">Биография</a></li>
+                  <li><a href="#" data-menuAnchor="#history">Консультации</a></li>
+                  <li><a href="#" data-menuAnchor="#ideal">Дипломы</a></li>
+                  <li class="logo"><a href="#" data-menuAnchor="#ideal">AnnaMakarova</a></li>
+                  <li><a href="#" data-menuAnchor="#notes">Мероприятия</a></li>
+                  <li><a href="#" data-menuAnchor="#notes">Видео</a></li>
+                  <li><a href="#" data-menuAnchor="#contacts">Контакты</a></li>
                 </ul>
               </nav>
             </div>
-            <div class="reg">
-              <div class="reg__notification">Notification</div>
-              <div class="login"> 
-                <div class="login__text">Account</div>
-                <div class="login__icon"></div>
-              </div>
+            <div class="social"><a href="#" class="social__icon"><img src="assets/img/icons/phone.svg" alt="phone"></a><a href="#" class="social__icon"><img src="assets/img/icons/mail.svg" alt="mail"></a></div>
+          </div>
+        </nav>
+        <div class="header">
+          <div class="header__wrap">
+            <h1 class="main-title">Анна Макарова</h1>
+            <div class="subtitle">клинический психолог</div>
+          </div>
+        </div>
+        <div class="header-bottom"> 
+          <div class="social"><a href="#" class="social__icon"><img src="assets/img/icons/fb.svg" alt="mail"></a><a href="#" class="social__icon"><img src="assets/img/icons/youtube.svg" alt="mail"></a><a href="#" class="social__icon"><img src="assets/img/icons/insta.svg" alt="mail"></a></div><a href="#" class="btn-scroll">Scroll</a><a href="#" class="download-viz">
+            <div class="download-viz__text">Загрузить визитку</div>
+            <div class="social__icon"><img src="assets/img/icons/icon_user.svg" alt="icon_user"></div></a>
+        </div>
+      </header>
+    </div>
+    <section class="bio">
+      <div class="title">Биография
+        <div class="title__behind">Biography</div>
+      </div>
+      <div class="bio__wrap">
+        <div class="wrap">
+          <div class="bio__body">
+            <div style="background-image: url('assets/img/bio-bg.jpg')" class="bio-deviz">
+              <div class="bio-deviz__text"> “Высокое напряжение опасно для жизни “ </div>
+              <div class="logo">AnnaMakarova</div>
+            </div>
+            <div class="bio__block"> 
+              <div class="bio__name">Макарова Анна Евгеньевна</div>
+              <ul class="bio__position"> 
+                <li>Клинический психолог</li>
+                <li>Профессиональный верификатор</li>
+                <li>Дипломированный специалист</li>
+                <li>Профайлер</li>
+                <li>Гипнолог</li>
+              </ul>
+              <div class="bio__slider">
+                <div class="bio__item"><span>2017</span>
+                  <div class="bio__text">г Закончила Московский Государственный Психолог - Педагогический Университет (Федеральное Государственное Бюджетное Образовательное Учреждение Высшего образования МГППУ г.Москва) Дипломированный специалист. Квалификация: Клинический психолог. 2019 г Сертифицированный специалист программы «Физиогномика». Московский Институт развития Бизнеса и Личности (ИРБЛ г.Москва) 2019 г Сертифицированный специалист программы «Характерология». Московский Институт развития Бизнеса и Личности (ИРБЛ г.Москва)</div>
+                </div>
+                <div class="bio__item"> <span>2018 </span>
+                  <div class="bio__text">г Сертификат об окончании курса «Психология Коммуникации». Национальный Исследовательский Университет «Высшая Школа Экономики». (ВШЭ г.Москва) 2018 г Сертификат об окончании курса «Психология Сознания». Санкт - Петербургский Государственный Университет (СПГУ) 2018 г Сертифицированный специалист «Психосоматика в психологии». Школа психосоматики PSY 2.0 </div>
+                </div>
+                <div class="bio__item"> <span>2019 </span>
+                  <div class="bio__text">г Сертифицированный специалист программы «Профайлинг». Московский Институт развития бизнеса и Личности (ИРБЛ г.Москва) 2019 г Дипломированный специалист в сфере "Психологии обеспечения кадровой безопасности». Академия Информационных Систем (АИС г.Москва) 2018 г Гештальт терапевт. Московский Институт гештальт терапии и консультирования. 2019 г Диплом и профессиональной переподготовки «Психологическое Консультирование с использованием эриксоновской психотерапии и гипноза. Столичный Институт Профессионального Образования (АНО ДПО «СИПО»г.Москва)</div>
+                </div>
+              </div><a href="#" class="bio__video">смотреть Видео</a>
             </div>
           </div>
         </div>
-        <div class="header"></div>
-      </nav>
-    </header>
-    <footer class="footer">
+      </div>
+    </section>
+    <section class="consult">
       <div class="wrap">
-        <div class="footer__left">
-          <div class="footer__logo">name</div>
-          <div class="rights">© 2018 Name, All rights reserved</div>
+        <div class="title">Консультации
+          <div class="title__behind">Consultations</div>
         </div>
-        <div class="footer__menu">
-          <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-          </ul>
-        </div>
-        <div class="social"><a href="#" class="social__item fb"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16">
-              <path fill-rule="evenodd" d="M5.681 15.516V8.59h2.07l.337-3.078H5.681v-1.5c0-.792.02-1.578 1.11-1.578h1.104V.233c0-.033-.948-.108-1.907-.108C3.984.125 2.73 1.4 2.73 3.742v1.77H.516V8.59H2.73v6.926H5.68z"></path>
-            </svg></a><a href="#" class="social__item tw"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13">
-              <path fill-rule="evenodd" d="M5.28 12.438c5.714 0 8.84-4.738 8.84-8.846 0-.135 0-.269-.01-.402a6.313 6.313 0 0 0 1.55-1.61 6.186 6.186 0 0 1-1.784.49c.649-.389 1.134-1 1.366-1.72a6.225 6.225 0 0 1-1.973.755A3.11 3.11 0 0 0 7.974 3.94 8.823 8.823 0 0 1 1.57.693a3.112 3.112 0 0 0 .963 4.15 3.082 3.082 0 0 1-1.411-.39v.04A3.11 3.11 0 0 0 3.615 7.54a3.09 3.09 0 0 1-1.403.053 3.11 3.11 0 0 0 2.903 2.16A6.231 6.231 0 0 1 .516 11.04a8.795 8.795 0 0 0 4.763 1.394"></path>
-            </svg></a><a href="#" class="social__item ins"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M4.517.094C3.264.151 2.178.457 1.302 1.33.422 2.208.119 3.298.062 4.538c-.034.773-.24 6.62.357 8.152a3.879 3.879 0 0 0 2.24 2.234c.487.189 1.042.317 1.858.355 6.819.308 9.346.14 10.412-2.589.19-.486.32-1.041.356-1.855.311-6.836-.05-8.318-1.24-9.505-.942-.94-2.05-1.58-9.528-1.236m.063 13.81c-.747-.034-1.152-.158-1.422-.263a2.505 2.505 0 0 1-1.454-1.449C1.25 11.027 1.4 5.495 1.441 4.6c.04-.877.218-1.679.836-2.297.766-.764 1.755-1.138 8.491-.834.88.04 1.683.217 2.303.834.766.764 1.145 1.76.836 8.47-.034.745-.158 1.15-.263 1.42-.693 1.775-2.288 2.022-9.064 1.71M10.843 3.61a.919.919 0 1 0 1.839 0 .919.919 0 0 0-1.84 0m-7.1 4.077a3.927 3.927 0 0 0 3.932 3.922 3.927 3.927 0 0 0 3.932-3.922 3.926 3.926 0 0 0-3.932-3.921 3.926 3.926 0 0 0-3.932 3.921m1.38 0A2.55 2.55 0 0 1 7.674 5.14a2.55 2.55 0 0 1 2.552 2.546 2.55 2.55 0 0 1-2.552 2.547 2.55 2.55 0 0 1-2.552-2.547"></path>
-            </svg></a>
-          <svg class="map-pin1">
-            <use xlink:href="img/icons/map-pin.svg#map-pin"> </use>
-          </svg>
+        <div class="subtitle">консультации для юридических и физических лиц</div>
+        <div class="consult__body">
+          <div class="consult__about">
+            <div class="consult__cite">
+              <div class="consult__text">“Я всегда лоббирую интересы своего клиента.”</div>
+              <div class="logo">AnnaMakarova</div>
+            </div>
+            <ol class="consult__position"> 
+              <li>Позвоните мне или отправьте электронное письмо. </li>
+              <li>Продолжительность первой сессии 50 минут. </li>
+              <li>Первую консультацию я ВСЕГДА провожу очно. </li>
+              <li>Последующие консультации возможны в очном и онлайн (по средствам Skype FaceTime WhatsApp) режимах. </li>
+            </ol>
+            <p>Ваша информация полностью конфидециальна. </p>
+            <p>Я связываюсь с Вами в течении 48 часов с предложением о встрече.</p><a href="#" class="btn">Связаться</a>
+          </div>
+          <div class="consult__tabs tabs">
+            <ul class="tabs__caption">
+              <li class="active">Персональные</li>
+              <li>Бизнес</li>
+              <li>Профайлинг</li>
+            </ul>
+            <div class="tabs__content active">Сумасшедший темп жизни, большая информационная нагрузка, жестокие реалии, тяжелые жизненные обстоятельства, у каждого своя жизнь и свой опыт. У каждого своё прошлое и своё будущее, жить или выживать, быть счастливым или страдать- для каждого это свой выбор. Каждый человек - это отдельный мир, интересный, глубокий и неповторимый. К каждому человеку индивидуальный подход. Я не работаю одной методикой со всеми людьми, ведь согласитесь, невозможно одним ключом открыть все двери. Создание безопасных условий, при которых человек сможет раскрыться, разобраться как он участвует в своей жизни и помощь в принятии решений - это приоритет в моей работе.</div>
+            <div class="tabs__content">Содержимое второго блока</div>
+            <div class="tabs__content">Содержимое третьего блока</div>
+          </div>
         </div>
       </div>
+    </section>
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__contact">
+          <div class="logo">Anna Makarova</div>Moscow <br>Sevostopolsky Avenue 28/1
+        </div>
+        <div class="footer__center">
+          <div class="logo">Anna Makarova</div>
+          <div class="rights">© 2018 Name, All rights reserved</div>
+        </div>
+        <div class="footer__contact"> <a href="tel:+70000000000"> 7 (000) 000 00 00 </a><a href="mailto:contact@makarovapsychology.co">contact@makarovapsychology.com</a></div>
+      </div>
     </footer>
-    <script src="js/scripts.min.js"></script>
-    <script src="js/common.js"></script>
+    <script src="assets/js/libs.min.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
   <!-- END body-->
 </html>

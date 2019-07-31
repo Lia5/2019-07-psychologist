@@ -1,8 +1,7 @@
 nav {
-    background-color: $accent;
-    color: #fff;
+    color: $text;
     a {
-        color: #fff;
+        color: $text;
     }
 }
 .nav {
@@ -16,20 +15,32 @@ nav {
 .menu-toggle {
     display: none;
 }
-
-
-
-
-
-
 header {
-    padding: 47px 0 0 0;
+    padding: 50px 50px 25px 50px;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    max-width: 1819px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .wrap {
+        min-height: 100vh;
+    }
 }
+.leng {
+    &__text {
 
-
-
+    }
+}
+.logo {
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'Augustia', 'Times New Roman', Times, serif;
+}
 .toggle-menu {
     display: none;
 }
@@ -37,15 +48,73 @@ header {
     display: none;
 }
 .main-menu {
-
     ul {
         display: flex;
+        align-items: center;
     }
-    a  {
+    a {
         display: block;
         padding: 20px 30px;
     }
-
 }
-
+.header {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.social {
+    &__icon {
+        display: block;
+        margin-right: 16px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.download-viz {
+    display: flex;
+    &__text {
+        margin-right: 10px;
+    }
+}
+.btn-scroll {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+    }
+    &:before {
+        width: 1px;
+        height: 50px;
+        background: $text;
+        top: 12px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0)
+    }
+    &:after {
+        top: 57px;
+        width: 5px;
+        height: 5px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0) rotate(-45deg);
+        border-left: 1px solid $text;
+        border-bottom: 1px solid $text;
+    }
+}
 //header

@@ -3,8 +3,8 @@
 @include font-face("Montserrat", "../fonts/Montserrat-Regular/Montserrat-Regular", 400);
 @include font-face("Montserrat", "../fonts/Montserrat-Bold/Montserrat-Bold", 700);
 
-@include font-face("Montserrat", "../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular", 400);
-@include font-face("Montserrat", "../fonts/PlayfairDisplay-Italic/PlayfairDisplay-Italic", 700, italic);
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular", 400);
+@include font-face("PlayfairDisplay", "../fonts/PlayfairDisplay-Italic/PlayfairDisplay-Italic", 700, italic);
 
 
 @include font-face("Helvetica-Light", "../fonts/Helvetica-Light/Helvetica-Light", 200);

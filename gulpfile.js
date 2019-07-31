@@ -31,22 +31,22 @@ gulp.task('styles', function() {
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
 	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
-	.pipe(gulp.dest('myapp/css'))
+	.pipe(gulp.dest('myapp/assets/css'))
 	.pipe(browserSync.stream())
 });
 
 gulp.task('js', function() {
 	return gulp.src([
 		'myapp/libs/1.jquery/dist/jquery.min.js',
-		'myapp/libs/intl-tel-input/js/utils.js',
-		'myapp/libs/intl-tel-input/js/intlTelInput.js',
+		// 'myapp/libs/intl-tel-input/js/utils.js',
+		// 'myapp/libs/intl-tel-input/js/intlTelInput.js',
 		'myapp/libs/3.mask/jquery.maskedinput.min.js',
 		'myapp/libs/2.slick/slick.js',
-		// 'myapp/js/common.js', // Always at the end
+		// 'myapp/js/custom.js', // Always at the end
 		])
-	.pipe(concat('scripts.min.js'))
+	.pipe(concat('libs.min.js'))
 	.pipe(uglify()) // Mifify js (opt.)
-	.pipe(gulp.dest('myapp/js'))
+	.pipe(gulp.dest('myapp/assets/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
 
