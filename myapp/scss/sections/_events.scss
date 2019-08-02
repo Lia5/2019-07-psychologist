@@ -1,3 +1,95 @@
 .events {
-    
+    &__body {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0);
+    }
+    &__wrap {
+        position: relative;
+    }   
+    .wrap {
+        position: relative;
+        display: flex;
+    }
+    &-deviz {
+        width: 50%;
+    }
+    &__block {
+        width: 50%;
+        background-color: #75787E;
+        color: #fff;
+        padding: 134px 105px 109px 129px;
+    }
+    &__name {
+        font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 33px;
+        /* or 117% */
+        letter-spacing: 0.03em;
+        margin-bottom: 29px;
+    }
+    &__position {
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding-bottom: 16px;
+        &--top {
+            border-bottom: 1px solid rgba(229, 229, 229, 0.5);
+            margin-bottom: 33px;
+        }
+        
+    }
+    &__item {
+        span {
+            font-weight: 700;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 1.56;
+        display: inline;
+        letter-spacing: 0.01em;
+        color: #DBDCDE;
+    }
+    &__slider {
+        padding-bottom: 51px;
+    }
+    &__video {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        line-height: 2.19;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #97DFEC;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            bottom: -10px;
+            background: #97DFEC;
+        }
+    }
+    .slick-arrow {
+        position: absolute;
+        bottom: -25px;
+    }
+    .arrow {
+        &-prev {
+            right: 32px;
+        }
+        &-next {
+            right: 0;
+        }
+    }
 }

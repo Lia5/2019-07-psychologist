@@ -151,6 +151,58 @@ ul,li {
 	display: block; /* по умолчанию показываем нужный блок */
 }
 
+//slider
+.slick-arrow {
+    z-index: 1;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #97DFEC;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    cursor: pointer;
+    svg {
+        fill: #97DFEC;
+    }
+    &:hover {
+        background: rgba(151, 223, 236, 0.5);
+        svg {
+            fill: #fff;
+        }
+    }
+}
+.arrow {
+    &-prev {
+        transform: rotate(180deg);
+    }
+}
+.slick-dots {
+	display: none;
+	text-align: center;
+	padding-bottom: 6px;
+	li {
+		display: inline-block;
+		button {
+			background: #97DFEC;
+			opacity: 0.2;
+			font-size: 0;
+			width: 10px;
+			height: 10px;
+			display: block;
+			padding: 0;
+			border: none;
+			box-shadow: none;
+			margin: 5px;
+		}
+		&.slick-active {
+			button {
+				opacity: 1;
+			}
+			
+		}
+	}
+}
 
 
 @import "sections/header"; 

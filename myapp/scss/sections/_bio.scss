@@ -1,11 +1,21 @@
 .bio {
     &__body {
+        width: 100%;
+        height: 100%;
+        top: 0;
         display: flex;
-
+        position: absolute;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0);
     }
     &__wrap {
-        background: linear-gradient(to right, #ededed 50%, #75787E 50%);            
-    }   
+        position: relative;
+    }
+    .wrap {
+        position: relative;
+        display: flex;
+    }
     &-deviz {
         position: relative;
         background-size: cover;
@@ -71,18 +81,59 @@
     }
     &__text {
         display: inline;
+        font-size: 16px;
+        line-height: 1.56;
+        letter-spacing: 0.01em;
+        color: #DBDCDE;
+    }
+    &__slider {
+        padding-bottom: 51px;
     }
     &__video {
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         font-weight: 500;
         line-height: 2.19;
-        /* or 219% */
-
         letter-spacing: 0.01em;
         text-transform: uppercase;
-
         color: #97DFEC;
         position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            bottom: -10px;
+            background: #97DFEC;
+        }
+        // &:after {
+        //     content: "";
+        //     position: absolute;
+        //     // content: url('../img/icon/arrow.svg');
+        //     display: block;
+        //     width: 100px;
+        //     height: 100px;
+        // }
 
+    }
+    .slick-arrow {
+        position: absolute;
+        bottom: -25px;
+    }
+    .arrow {
+        &-prev {
+            right: 32px;
+        }
+        &-next {
+            right: 0;
+        }
+    }
+}
+.block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    &-bg {
+        background-color: #75787E;
     }
 }

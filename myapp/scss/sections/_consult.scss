@@ -33,32 +33,51 @@
             list-style-position: inside; 
         }
     }
-    &__tabs {
-        width: 50%;
-        .tabs__caption {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    &__slider {
+        &-wrap {
+            width: 50%;
+        }
+        &-caption {
+            width: 100%;;
             font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
             font-weight: 400;
             font-size: 20px;
             line-height: 27px;
             color: #9C9C9C;
-            li {
-                position: relative;
-                &:after {
-                    content: "";
-                    position: absolute;
-                    bottom: -20px;
-                    left: 0;
-                    width: 100%;
-                    height: 1px;
-                    background: #97DFEC;
-                }
-                &.active {
-                    color: $text;
+            .slick-list {
+                padding: 0!important;
+            }
+            .slick-track {
+                width: 100%!important;
+                display: flex;
+                justify-content: space-between;
+            }
+            .slick-current {
+                color: $text;
+                .consult__nav {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background: #97DFEC;
+                    }
                 }
             }
+        }
+        &-for {
+            position: relative;
+        }
+       
+    }
+    &__nav {
+        position: relative;
+        padding: 0 0 23px 0;
+        display: inline-block;
+        &.active {
+            color: $text;
         }
     }
 }
