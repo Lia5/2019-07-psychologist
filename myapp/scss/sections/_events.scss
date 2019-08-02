@@ -18,6 +18,10 @@
     }
     &-deviz {
         width: 50%;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
     }
     &__block {
         width: 50%;

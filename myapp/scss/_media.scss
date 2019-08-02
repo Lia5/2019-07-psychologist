@@ -3,8 +3,17 @@
  
 }
 @media only screen and (max-width: 1680px) {
- 
+    .consult {
+        &__body {
+            padding-left: 20px;
+            padding-right: 20px;
+            max-width: 1423px;
+            margin: 0 auto;
+        }
+    }
 }
+
+
 
 @media only screen and (max-width: 1340px) {
     .nav {
@@ -90,7 +99,19 @@
     header {
         background-position: top right -184px;
     }
-    .bio {
+    .bio, .events {
+        &__body {
+            .bio__block, .events__block {
+                display: none;
+            }
+            .bio-deviz {
+                background-size: contain;
+            } 
+            .events-deviz {
+                background-size: contain;
+                background-position: bottom center;
+            }
+        }
         &__wrap {
             .wrap {
                 flex-direction: column;
@@ -129,6 +150,18 @@
     }
 }
 @media only screen and (max-width: 1240px) {
+    .bio {
+        &-deviz {
+            min-height: 847px;
+        }
+    }
+    .events {
+        &-deviz {
+            min-height: 679px;
+        }
+    }    
+}
+@media only screen and (max-width: 1240px) {
   
 }
 @media only screen and (max-width: 980px) {
@@ -159,21 +192,58 @@
         }
     }
 }
-@media only screen and (max-width: 768px) {
-  
-}
-@media only screen and (max-width: 500px) {
-   
-}
-
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 785px) {
     .bio {
         &-deviz {
-            min-height: 375px;
+            min-height: 525px;
         }
-        &__block {
-            padding: 33px 10px 48px;
+    }
+    .events {
+        &-deviz {
+            min-height: 527px;
         }
+    } 
+}
+@media only screen and (max-width: 620px) {
+    .bio{
+        &__body {
+            .bio {
+                &-deviz {
+                    min-height: 325px;
+                    background-size: 163%;
+                }
+            }
+        }
+    }
+    .events{
+        &__body {
+            .events {
+                &-deviz {
+                    min-height: 327px;
+                    background-size: 163%;
+                }
+            }
+        }
+        
+    } 
+}
+
+@media only screen and (max-width: 374px) {
+    .bio{
+        &__body {
+            .bio {
+                &-deviz {
+                    min-height: 375px;
+                    
+                }
+                &__block {
+                    padding: 33px 10px 48px;
+                }
+            }
+        }
+    }
+    .events-deviz {
+        min-height: 459px;
     }
 }
 @media only screen and (max-width: 320px) {

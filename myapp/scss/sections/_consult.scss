@@ -15,8 +15,11 @@
     }
     &__cite {
         display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
     &__text {
+        max-width: 348px;
         font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
         font-weight: 400;
         font-style: italic;
