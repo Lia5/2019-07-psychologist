@@ -159,7 +159,15 @@
         &-deviz {
             min-height: 679px;
         }
-    }    
+    }   
+    .consult {
+        &__body {
+            flex-direction: column;
+        }
+        &__about, &__slider-wrap {
+            width: 100%;
+        }
+    }
 }
 @media only screen and (max-width: 1240px) {
   
@@ -226,6 +234,12 @@
         }
         
     } 
+    .consult {
+        &__slider-wrap {
+            display: none;
+        }
+    }
+    
 }
 
 @media only screen and (max-width: 374px) {
