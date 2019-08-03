@@ -11,13 +11,16 @@
     <title>Document </title>
   </head>
   <body>
-    <div class="wrap">
+    <div id="top" class="wrap">
       <header style="background-image: url('assets/img/header-bg.jpg')">
         <nav>
           <div class="nav">
             <div class="lang">
-              <div class="leng__text">RU</div>
-              <div class="leng__wrap"></div>
+              <div class="lang__text">ru</div>
+              <ul class="lang__wrap">
+                <li class="lang__item">ru</li>
+                <li class="lang__item">en</li>
+              </ul>
             </div>
             <div class="menu-wrap">
               <div class="menu-toggle"> 
@@ -27,13 +30,13 @@
               </div>
               <nav class="main-menu"> 
                 <ul>
-                  <li><a href="#" data-menuAnchor="#calc">Биография</a></li>
-                  <li><a href="#" data-menuAnchor="#history">Консультации</a></li>
-                  <li><a href="#" data-menuAnchor="#ideal">Дипломы</a></li>
-                  <li class="logo"><a href="#" data-menuAnchor="#ideal">AnnaMakarova</a></li>
-                  <li><a href="#" data-menuAnchor="#notes">Мероприятия</a></li>
-                  <li><a href="#" data-menuAnchor="#notes">Видео</a></li>
-                  <li><a href="#" data-menuAnchor="#contacts">Контакты</a></li>
+                  <li><a href="#" data-div="#bio">Биография</a></li>
+                  <li><a href="#" data-div="#consult">Консультации</a></li>
+                  <li><a href="#" data-div="#diploms">Дипломы</a></li>
+                  <li class="logo"><a href="#" data-div="#top">AnnaMakarova</a></li>
+                  <li><a href="#" data-div="#events">Мероприятия</a></li>
+                  <li><a href="#" data-div="#notes">Видео</a></li>
+                  <li><a href="#" data-div="#contacts">Контакты</a></li>
                 </ul>
               </nav>
             </div>
@@ -47,13 +50,13 @@
           </div>
         </div>
         <div class="header-bottom"> 
-          <div class="social"><a href="#" class="social__icon"><img src="assets/img/icons/fb.svg" alt="mail"></a><a href="#" class="social__icon"><img src="assets/img/icons/youtube.svg" alt="mail"></a><a href="#" class="social__icon"><img src="assets/img/icons/insta.svg" alt="mail"></a></div><a href="#" class="btn-scroll">Scroll</a><a href="#" class="download-viz">
+          <div class="social"><a href="#" class="social__icon"><img src="assets/img/icons/fb.svg" alt="mail"></a><a href="#" class="social__icon"><img src="assets/img/icons/youtube.svg" alt="mail"></a><a href="#" class="social__icon"><img src="assets/img/icons/insta.svg" alt="mail"></a></div><a href="#" data-div="#bio" class="btn-scroll">Scroll</a><a href="#" class="download-viz">
             <div class="download-viz__text">Загрузить визитку</div>
             <div class="social__icon"><img src="assets/img/icons/icon_user.svg" alt="icon_user"></div></a>
         </div>
       </header>
     </div>
-    <section class="bio">
+    <section id="bio" class="bio">
       <div class="title">Биография
         <div class="title__behind">Biography</div>
       </div>
@@ -91,7 +94,7 @@
         </div>
       </div>
     </section>
-    <section class="consult">
+    <section id="consult" class="consult">
       <div class="wrap">
         <div class="title">Консультации
           <div class="title__behind">Consultations</div>
@@ -110,7 +113,7 @@
               <li>Последующие консультации возможны в очном и онлайн (по средствам Skype FaceTime WhatsApp) режимах. </li>
             </ol>
             <p>Ваша информация полностью конфидециальна. </p>
-            <p>Я связываюсь с Вами в течении 48 часов с предложением о встрече.</p><a href="#" class="btn">Связаться</a>
+            <p>Я связываюсь с Вами в течении 48 часов с предложением о встрече.</p><a href="javascript:void(0)" onclick="sfOpen();" class="btn">Связаться</a>
           </div>
           <div class="consult__slider-wrap">
             <div class="consult__slider">
@@ -135,7 +138,7 @@
         </div>
       </div>
     </section>
-    <section class="events">
+    <section id="events" class="events">
       <div class="title">События
         <div class="title__behind">Events</div>
       </div>
@@ -174,7 +177,7 @@
         </div>
       </div>
     </section>
-    <section class="diploms">
+    <section id="diploms" class="diploms">
       <div class="title">Дипломы
         <div class="title__behind">Diplom</div>
       </div>
@@ -204,6 +207,38 @@
         </div>
       </div>
     </section>
+    <div id="sendform" class="sendform disabled">
+      <div class="sendform__wrap animated fadeInDown">
+        <div id="sendform-close" class="close">
+          <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="t-popup__close-icon">
+            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+              <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+              <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+            </g>
+          </svg>
+        </div>
+        <h3>Воспользуйтесь формой обратной связи</h3>
+        <div class="sendform__text">В течении 48 часов я с вами свяжусь</div>
+        <form action="#" class="modal__form">  
+          <div class="form-line phone">
+            <input type="text" name="name" placeholder="Имя" required>
+          </div>
+          <div class="form-line phone">
+            <input type="email" name="email" placeholder="E-mail" required>
+          </div>
+          <div class="form-line phone">
+            <input id="modal__phone" type="text" name="phone" placeholder="+ 7 (___) ___ – __ – __ " required class="phone-mask">
+          </div>
+          <div class="form-line">
+            <input type="submit" value="Отправить" class="btn">
+          </div>
+          <div class="agree-line">
+            <input id="modal__agree" type="checkbox" checked="" disabled>
+            <label for="#modal__agree">Отправляя заявку, я принимаю <a href="#">Пользовательское соглашение</a></label>
+          </div>
+        </form>
+      </div>
+    </div>
     <footer class="footer">
       <div class="wrap">
         <div class="footer__contact">

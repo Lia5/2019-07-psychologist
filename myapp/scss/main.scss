@@ -26,14 +26,13 @@ body {
 	overflow-x: hidden;
 	color: $text;
 	input, textarea {
-		border: #666 1px solid;
 		outline: none;
-		&:focus:required:invalid {
-			border-color: red;
-		}
-		&:required:valid {
-			border-color: green;
-		}
+		// &:focus:required:invalid {
+		// 	border-color: red;
+		// }
+		// &:required:valid {
+		// 	border-color: green;
+		// }
 	}
 }
 
@@ -166,7 +165,7 @@ ul,li {
         fill: #97DFEC;
     }
     &:hover {
-        background: rgba(151, 223, 236, 0.5);
+        background: #97DFEC;
         svg {
             fill: #fff;
         }
@@ -210,6 +209,7 @@ ul,li {
 @import "sections/consult";
 @import "sections/events";
 @import "sections/diploms";
+@import "sections/modal"; 
 @import "sections/footer"; 
 
 @import "media"; // Always at the end

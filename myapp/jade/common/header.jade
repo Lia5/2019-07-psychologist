@@ -1,10 +1,12 @@
-.wrap
+.wrap#top
 	header(style="background-image: url('assets/img/header-bg.jpg')")
 		nav
 			.nav
 				.lang
-					.leng__text RU
-					.leng__wrap
+					.lang__text ru
+					ul.lang__wrap
+						li.lang__item ru
+						li.lang__item en
 				.menu-wrap
 					.menu-toggle 
 						.one
@@ -14,19 +16,19 @@
 					nav.main-menu 
 						ul
 							li
-								a(href="#" data-menuAnchor="#calc") Биография
+								a(href="#" data-div="#bio") Биография
 							li
-								a(href="#" data-menuAnchor="#history") Консультации
+								a(href="#" data-div="#consult") Консультации
 							li
-								a(href="#" data-menuAnchor="#ideal") Дипломы
+								a(href="#" data-div="#diploms") Дипломы
 							li.logo
-								a(href="#" data-menuAnchor="#ideal") AnnaMakarova
+								a(href="#" data-div="#top") AnnaMakarova
 							li
-								a(href="#" data-menuAnchor="#notes") Мероприятия
+								a(href="#" data-div="#events") Мероприятия
 							li
-								a(href="#" data-menuAnchor="#notes") Видео
+								a(href="#" data-div="#notes") Видео
 							li
-								a(href="#" data-menuAnchor="#contacts") Контакты
+								a(href="#" data-div="#contacts") Контакты
 				.social
 					a(href="#").social__icon
 						img(src="assets/img/icons/phone.svg", alt="phone")
@@ -44,7 +46,7 @@
 					img(src="assets/img/icons/youtube.svg", alt="mail")
 				a(href="#").social__icon
 					img(src="assets/img/icons/insta.svg", alt="mail")
-			a(href="#").btn-scroll Scroll
+			a(href="#" data-div="#bio").btn-scroll Scroll
 			a(href="#").download-viz
 				.download-viz__text Загрузить визитку
 				.social__icon

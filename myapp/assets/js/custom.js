@@ -1,5 +1,36 @@
 $(function() {
 
+    //scroll 1 screen 
+    $(".btn-scroll").click(function (e){
+        e.preventDefault();
+        var $div = $(this).data('div');
+        $('html, body').animate({
+            scrollTop: $($div).offset().top
+        }, 1000);
+    });
+    $(".main-menu a").click(function (e){
+        e.preventDefault();
+        var $div = $(this).data('div');
+        $('html, body').animate({
+            scrollTop: $($div).offset().top
+        }, 1000);
+    });
+
+    //mask - select-number form
+    if(jQuery('.phone-mask').length) {
+        jQuery(function($){
+            $(".phone-mask").mask("+7(999) 999-9999");
+        });
+    } 
+    //leng 
+    $(".lang__text").click(function (){
+        $(".lang__wrap").addClass("active");
+    });
+    $(".lang__item").click(function (){
+        var lang = $(this).text();
+        $(".lang__text").text(lang);
+        $(".lang__wrap").removeClass("active");
+    });    
     //slider bio
     if(jQuery('.bio__slider').length) {
         $('.bio__slider').slick({
@@ -98,9 +129,38 @@ $(function() {
 
 });
 
+//popup
+let sendform = document.querySelector('#sendform'),
+    sendformWrap = document.querySelector('.sendform__wrap'),
+    sendformClose = document.querySelector('#sendform-close');
 
+function sfOpen() {
+    sendformWrap.classList.remove('fadeOutUp');
+    sendformWrap.classList.add('fadeInDown');
+    sendform.classList.remove('disabled');
+    sendform.classList.add('flex');
+}
+
+function sfCLose() {
+    sendformWrap.classList.remove('fadeInDown');
+    sendformWrap.classList.add('fadeOutUp');
+    setTimeout("sendform.classList.add('disabled')", 700);
+    setTimeout("sendform.classList.remove('flex')", 800);
+}
 
 document.addEventListener('DOMContentLoaded', function(){
+//popup
+
+    sendform.addEventListener('click', e => {
+        if (e.target !== sendformWrap && e.target == sendform) {
+            sfCLose();
+        }
+    });
+
+    sendformClose.addEventListener('click', () => {
+        sfCLose();
+    });
+
 //menu
     var menu = document.querySelector('.menu-toggle');
     menu.addEventListener('click', function(){
