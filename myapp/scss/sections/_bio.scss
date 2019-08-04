@@ -1,4 +1,8 @@
 .bio {
+    margin-bottom: 126px;
+    .title {
+        margin-bottom: 80px;
+    }
     &__body {
         width: 100%;
         height: 100%;
@@ -15,6 +19,7 @@
     .wrap {
         position: relative;
         display: flex;
+        max-width: 1905px;
     }
     &-deviz {
         position: relative;
@@ -23,7 +28,7 @@
         background-position: top center;
         text-align: right;
         width: 50%;
-        padding: 130px 24px;
+        padding: 130px 74px;
         &:before {
             content: "";
             position: absolute;
@@ -34,23 +39,22 @@
             height: 100%;
         }
         &__text {
-           
             font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
             font-style: italic;
             font-weight: 400;
             font-size: 16px;
             line-height: 35px;
             /* or 219% */
-
             letter-spacing: 0.03em;
             display: inline-block;
+            margin-bottom: 22px;
         }
     }
     &__block {
         width: 50%;
         background-color: #75787E;
         color: #fff;
-        padding: 134px 105px 109px 129px;
+        padding: 134px 110px 136px 129px;
     }
     &__name {
         font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
@@ -67,9 +71,9 @@
         /* identical to box height */
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        padding-bottom: 34px;
+        padding-bottom: 25px;
         border-bottom: 1px solid rgba(229, 229, 229, 0.5);
-        margin-bottom: 33px;
+        margin-bottom: 29px;
         li {
             margin-bottom: 10px;
         }
@@ -87,7 +91,7 @@
         color: #DBDCDE;
     }
     &__slider {
-        padding-bottom: 51px;
+        padding-bottom: 35px;
     }
     &__video {
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -101,6 +105,7 @@
             content: "";
             position: absolute;
             width: 100%;
+            width: calc(100% - 26px);
             height: 1px;
             left: 0;
             bottom: -10px;
@@ -118,14 +123,14 @@
     }
     .slick-arrow {
         position: absolute;
-        bottom: -25px;
+        bottom: -37px;
     }
     .arrow {
         &-prev {
-            right: 32px;
+            right: 45px;
         }
         &-next {
-            right: 0;
+            right: 13px;
         }
     }
 }

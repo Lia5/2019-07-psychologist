@@ -1,4 +1,8 @@
 .events {
+    margin-bottom: 96px;
+    .title {
+        margin-bottom: 65px;
+    }
     &__body {
         width: 100%;
         height: 100%;
@@ -27,7 +31,7 @@
         width: 50%;
         background-color: #75787E;
         color: #fff;
-        padding: 134px 105px 109px 129px;
+        padding: 144px 152px 215px 68px;
     }
     &__name {
         font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
@@ -36,7 +40,7 @@
         line-height: 33px;
         /* or 117% */
         letter-spacing: 0.03em;
-        margin-bottom: 29px;
+        margin-bottom: 52px;
     }
     &__position {
         font-size: 16px;
@@ -44,10 +48,11 @@
         /* identical to box height */
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        padding-bottom: 16px;
+        padding-bottom: 14px;
         &--top {
+            max-width: 442px;
             border-bottom: 1px solid rgba(229, 229, 229, 0.5);
-            margin-bottom: 33px;
+            margin-bottom: 45px;
         }
         
     }
@@ -57,14 +62,18 @@
         }
     }
     &__text {
+        margin-top: 18px;
         font-size: 16px;
         line-height: 1.56;
-        display: inline;
+        display: block;
         letter-spacing: 0.01em;
         color: #DBDCDE;
+        max-height: 120px;
+        overflow: hidden;
+
     }
     &__slider {
-        padding-bottom: 51px;
+        padding-bottom: 42px;
     }
     &__video {
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -78,6 +87,7 @@
             content: "";
             position: absolute;
             width: 100%;
+            width: calc(100% - 26px);
             height: 1px;
             left: 0;
             bottom: -10px;
@@ -86,7 +96,7 @@
     }
     .slick-arrow {
         position: absolute;
-        bottom: -25px;
+        bottom: -37px;
     }
     .arrow {
         &-prev {

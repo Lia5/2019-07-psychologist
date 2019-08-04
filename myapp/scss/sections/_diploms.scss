@@ -1,4 +1,10 @@
 .diploms {
+    .title {
+        margin-bottom: 20px;
+    }
+    &__wrap {
+        margin-bottom: 89px;
+    }
     &__item {
         max-width: 327px;
         max-height: 450px;
@@ -18,18 +24,27 @@
         .slick-arrow {
             display: block;
             position: absolute;
-            bottom: 0;
+            bottom: -17px;
         }
         .arrow {
             &-prev {
-                left: 20%;
+                left: 46%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%) rotate(180deg);
             }
             &-next {
-                right: 20%;
+                left: 56%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
             }
         }
         .slick-dots {
             display: block;
+            margin-top: 63px;
+            button {
+                outline: none;
+            }
+            
         }
     }
     &__img {

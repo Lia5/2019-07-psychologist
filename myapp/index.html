@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="top" class="wrap">
-      <header style="background-image: url('assets/img/header-bg.jpg')">
+      <header>
         <nav>
           <div class="nav">
             <div class="lang">
@@ -89,7 +89,7 @@
               <div class="bio__item"> <span>2019 </span>
                 <div class="bio__text">г Сертифицированный специалист программы «Профайлинг». Московский Институт развития бизнеса и Личности (ИРБЛ г.Москва) 2019 г Дипломированный специалист в сфере "Психологии обеспечения кадровой безопасности». Академия Информационных Систем (АИС г.Москва) 2018 г Гештальт терапевт. Московский Институт гештальт терапии и консультирования. 2019 г Диплом и профессиональной переподготовки «Психологическое Консультирование с использованием эриксоновской психотерапии и гипноза. Столичный Институт Профессионального Образования (АНО ДПО «СИПО»г.Москва)</div>
               </div>
-            </div><a href="#" class="bio__video">смотреть Видео  &#10230;</a>
+            </div><a href="#modalVideo" class="bio__video modal-open">смотреть Видео  &#10230;</a>
           </div>
         </div>
       </div>
@@ -113,7 +113,7 @@
               <li>Последующие консультации возможны в очном и онлайн (по средствам Skype FaceTime WhatsApp) режимах. </li>
             </ol>
             <p>Ваша информация полностью конфидециальна. </p>
-            <p>Я связываюсь с Вами в течении 48 часов с предложением о встрече.</p><a href="javascript:void(0)" onclick="sfOpen();" class="btn">Связаться</a>
+            <p>Я связываюсь с Вами в течении 48 часов с предложением о встрече.</p><a href="#modalForm" class="btn modal-open">Связаться</a>
           </div>
           <div class="consult__slider-wrap">
             <div class="consult__slider">
@@ -159,19 +159,19 @@
               </div>
               <div class="events__item"> 
                 <div class="events__name">June 12</div>
-                <div class="events__position">Section of psychology, studying mental phenomena in terms</div>
+                <div class="events__position events__position--top">Section of psychology, studying mental phenomena in terms</div>
                 <div class="events__position">Moscow Sevastopol Avenue 28/1</div>
                 <div class="events__position">beginning 20:00</div>
                 <div class="events__text">г Сертификат об окончании курса «Психология Коммуникации». Национальный Исследовательский Университет «Высшая Школа Экономики». (ВШЭ г.Москва) 2018 г Сертификат об окончании курса «Психология Сознания». Санкт - Петербургский Государственный Университет (СПГУ) 2018 г Сертифицированный специалист «Психосоматика в психологии». Школа психосоматики PSY 2.0 </div>
               </div>
               <div class="events__item"> 
                 <div class="events__name">June 12</div>
-                <div class="events__position">Section of psychology, studying mental phenomena in terms</div>
+                <div class="events__position events__position--top">Section of psychology, studying mental phenomena in terms</div>
                 <div class="events__position">Moscow Sevastopol Avenue 28/1</div>
                 <div class="events__position">beginning 20:00</div>
                 <div class="events__text">г Сертифицированный специалист программы «Профайлинг». Московский Институт развития бизнеса и Личности (ИРБЛ г.Москва) 2019 г Дипломированный специалист в сфере "Психологии обеспечения кадровой безопасности». Академия Информационных Систем (АИС г.Москва) 2018 г Гештальт терапевт. Московский Институт гештальт терапии и консультирования. 2019 г Диплом и профессиональной переподготовки «Психологическое Консультирование с использованием эриксоновской психотерапии и гипноза. Столичный Институт Профессионального Образования (АНО ДПО «СИПО»г.Москва)</div>
               </div>
-            </div><a href="#" class="events__video">read more  &#10230;</a>
+            </div><a href="#modalEvents" class="events__video modal-open">read more  &#10230;</a>
           </div>
           <div class="events-deviz"></div>
         </div>
@@ -207,9 +207,9 @@
         </div>
       </div>
     </section>
-    <div id="sendform" class="sendform disabled">
-      <div class="sendform__wrap animated fadeInDown">
-        <div id="sendform-close" class="close">
+    <div id="modalForm" class="modal disabled">
+      <div class="modal__wrap animated fadeInDown">
+        <div id="modal-close" class="close">
           <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="t-popup__close-icon">
             <g stroke="none" stroke-width="1" fill-rule="evenodd">
               <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
@@ -217,26 +217,90 @@
             </g>
           </svg>
         </div>
-        <h3>Воспользуйтесь формой обратной связи</h3>
-        <div class="sendform__text">В течении 48 часов я с вами свяжусь</div>
-        <form action="#" class="modal__form">  
-          <div class="form-line phone">
-            <input type="text" name="name" placeholder="Имя" required>
+        <div class="modal__body">
+          <h3>Воспользуйтесь формой обратной связи</h3>
+          <div class="modal__text">В течении 48 часов я с вами свяжусь</div>
+          <form action="#" class="modal__form">  
+            <div class="form-line phone">
+              <input type="text" name="name" placeholder="Имя" required>
+            </div>
+            <div class="form-line phone">
+              <input type="email" name="email" placeholder="E-mail" required>
+            </div>
+            <div class="form-line phone">
+              <input id="modal__phone" type="text" name="phone" placeholder="+ 7 (___) ___ – __ – __ " required class="phone-mask">
+            </div>
+            <div class="form-line">
+              <input type="submit" value="Отправить" class="btn">
+            </div>
+            <div class="agree-line">
+              <input id="modal__agree" type="checkbox" checked="" disabled>
+              <label for="#modal__agree">Отправляя заявку, я принимаю <a href="#">Пользовательское соглашение</a></label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="modalEvents" class="modal disabled">
+      <div class="modal__wrap animated fadeInDown">
+        <div id="modal-close" class="close">
+          <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="t-popup__close-icon">
+            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+              <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+              <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+            </g>
+          </svg>
+        </div>
+        <div class="modal__body">
+          <div class="events__item">
+            <div class="events__name">June 12</div>
+            <div class="events__position events__position--top">Section of psychology, studying mental phenomena in terms</div>
+            <div class="events__position">Moscow Sevastopol Avenue 28/1</div>
+            <div class="events__position">beginning 20:00</div>
+            <div class="events__text">Section of psychology, studying mental phenomena in terms of their relationship with disease. The field of clinical psychology includes the diagnosis of mental health, the organization and conduct of research to understand psychophysiological problems and the development, implementation and evaluation of psychological correction. Section of psychology, studying mental phenomena in terms of their relationship with disease. The field of clinical psychology includes the diagnosis of mental health, the organization and conduct of research to understand psychophysiological problems and the development, implementation and evaluation of psychological correction. Section of psychology, studying mental phenomena in terms of their relationship with disease. The field of clinical psychology includes the diagnosis of mental health, the organization and conduct of research to understand psychophysiological problems and the development, implementation and evaluation of psychological correction.</div>
           </div>
-          <div class="form-line phone">
-            <input type="email" name="email" placeholder="E-mail" required>
+        </div>
+      </div>
+    </div>
+    <div id="modalVideo" class="modal disabled">
+      <div class="modal__wrap animated fadeInDown">
+        <div id="modal-close" class="close">
+          <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="t-popup__close-icon">
+            <g stroke="none" stroke-width="1" fill-rule="evenodd">
+              <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+              <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+            </g>
+          </svg>
+        </div>
+        <div class="modal__body">
+          <div class="video">
+            <div class="video__content">
+              <iframe src="https://www.youtube.com/embed/f7zk9qLbSSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" id="YouTube"></iframe>
+            </div>
+            <ul class="video__caption">
+              <li class="active video__item"> 
+                <div class="video__img"> <img src="assets/img/video/video-pic.jpg" alt="video" data-video="https://www.youtube.com/embed/f7zk9qLbSSs"></div>
+                <div class="video__text">Профессиональный верифкатор</div>
+              </li>
+              <li class="video__item"> 
+                <div class="video__img"> <img src="assets/img/video/video-pic.jpg" alt="video" data-video="https://www.youtube.com/embed/lz5H7M15b_E"></div>
+                <div class="video__text">2-я вкладка</div>
+              </li>
+              <li class="video__item"> 
+                <div class="video__img"> <img src="assets/img/video/video-pic.jpg" alt="video" data-video="https://www.youtube.com/embed/P5csD0SX8jI"></div>
+                <div class="video__text">3-я вкладка</div>
+              </li>
+              <li class="video__item"> 
+                <div class="video__img"> <img src="assets/img/video/video-pic.jpg" alt="video" data-video="https://www.youtube.com/embed/f7zk9qLbSSs"></div>
+                <div class="video__text">4-я вкладка</div>
+              </li>
+              <li class="video__item"> 
+                <div class="video__img"> <img src="assets/img/video/video-pic.jpg" alt="video" data-video="https://www.youtube.com/embed/lz5H7M15b_E"></div>
+                <div class="video__text">5-я вкладка</div>
+              </li>
+            </ul>
           </div>
-          <div class="form-line phone">
-            <input id="modal__phone" type="text" name="phone" placeholder="+ 7 (___) ___ – __ – __ " required class="phone-mask">
-          </div>
-          <div class="form-line">
-            <input type="submit" value="Отправить" class="btn">
-          </div>
-          <div class="agree-line">
-            <input id="modal__agree" type="checkbox" checked="" disabled>
-            <label for="#modal__agree">Отправляя заявку, я принимаю <a href="#">Пользовательское соглашение</a></label>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
     <footer class="footer">
@@ -246,7 +310,7 @@
         </div>
         <div class="footer__center">
           <div class="logo">Anna Makarova</div>
-          <div class="rights">© 2018 Name, All rights reserved</div>
+          <div class="rights">Все права защищены. Анна Макарова. © 2019</div>
         </div>
         <div class="footer__contact"> <a href="tel:+70000000000"> 7 (000) 000 00 00 </a><a href="mailto:contact@makarovapsychology.co">contact@makarovapsychology.com</a></div>
       </div>

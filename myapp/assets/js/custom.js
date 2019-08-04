@@ -111,6 +111,18 @@ $(function() {
               ]
         });
     }
+//video
+
+$('.video__item').click(function (){
+    console.log($(this));
+    var href = $(this).children().children().data('video');
+    console.log(href);
+    console.log($(this));
+    $(this)
+    .addClass('active').siblings().removeClass('active').children().data('video');
+
+    $('#YouTube').attr('src', href);
+});
 
 
     //tabs
@@ -126,40 +138,73 @@ $(function() {
         });
     })(jQuery);
 
+//popup
 
+
+
+let modalWrap = $('.modal__wrap');
+let body = $('body');
+
+$(".modal-open").click(function (e){
+    e.preventDefault();
+    var numModal = $(this).attr('href');
+    var modal =  $(numModal);
+    modalWrap.removeClass('fadeOutUp');
+    modalWrap.addClass('fadeInDown');
+    modal.removeClass('disabled');
+    modal.addClass('flex');
+    // body.addClass('body-modal');
 });
 
 //popup
-let sendform = document.querySelector('#sendform'),
-    sendformWrap = document.querySelector('.sendform__wrap'),
-    sendformClose = document.querySelector('#sendform-close');
+    $('#modal-close').click(function (){
 
-function sfOpen() {
-    sendformWrap.classList.remove('fadeOutUp');
-    sendformWrap.classList.add('fadeInDown');
-    sendform.classList.remove('disabled');
-    sendform.classList.add('flex');
-}
+        modalWrap.removeClass('fadeInDown');
+        modalWrap.addClass('fadeOutUp');
+        setTimeout(function() {
+            $('.modal').addClass('disabled');
+          }, 700);
+        setTimeout(function() {
+            $('.modal').removeClass('flex');
+          }, 800);  
+          var yt = $('#YouTube').attr('src');
+          console.log(yt);
+        $('#YouTube').attr('src', " ");
+        $('#YouTube').attr('src', yt);
 
-function sfCLose() {
-    sendformWrap.classList.remove('fadeInDown');
-    sendformWrap.classList.add('fadeOutUp');
-    setTimeout("sendform.classList.add('disabled')", 700);
-    setTimeout("sendform.classList.remove('flex')", 800);
-}
+    });
 
-document.addEventListener('DOMContentLoaded', function(){
-//popup
+    $('.modal').mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".modal__body"); // тут указываем ID элемента
+        var close = $('#modal-close');
+        if (close.is(e.target)) {
 
-    sendform.addEventListener('click', e => {
-        if (e.target !== sendformWrap && e.target == sendform) {
-            sfCLose();
+        } else if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            var modalWrap = $('.modal__wrap');
+            modalWrap.removeClass('fadeInDown');
+            modalWrap.addClass('fadeOutUp');
+            setTimeout(function() {
+                $('.modal').addClass('disabled');
+            }, 700);
+            setTimeout(function() {
+                $('.modal').removeClass('flex');
+            }, 800); 
+            var yt = $('#YouTube').attr('src');
+            console.log(yt+"ujkhh");
+            $('#YouTube').attr('src', " ");
+            $('#YouTube').attr('src', yt);
+            
         }
     });
 
-    sendformClose.addEventListener('click', () => {
-        sfCLose();
-    });
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function(){
+
 
 //menu
     var menu = document.querySelector('.menu-toggle');

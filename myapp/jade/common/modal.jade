@@ -1,23 +1,73 @@
-#sendform.sendform.disabled
-    .sendform__wrap.animated.fadeInDown
-        .close#sendform-close
+#modalForm.modal.disabled
+    .modal__wrap.animated.fadeInDown
+        .close#modal-close
             svg.t-popup__close-icon(width='23px', height='23px', viewBox='0 0 23 23', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
                 g(stroke='none', stroke-width='1', fill-rule='evenodd')
                     rect(transform='translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) ', x='10.3137085', y='-3.6862915', width='2', height='30')
                     rect(transform='translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) ', x='10.3137085', y='-3.6862915', width='2', height='30')
+        .modal__body
+            h3 Воспользуйтесь формой обратной связи
+            .modal__text В течении 48 часов я с вами свяжусь
+            form.modal__form(action="#")   
+                .form-line.phone
+                    input(type='text', name='name', placeholder='Имя', required)
+                .form-line.phone
+                    input(type='email', name='email', placeholder='E-mail', required)
+                .form-line.phone
+                    input#modal__phone.phone-mask(type='text', name='phone', placeholder='+ 7 (___) ___ – __ – __ ', required)
+                .form-line
+                    input.btn(type='submit', value='Отправить')
+                .agree-line
+                    input#modal__agree(type='checkbox', checked='', disabled)
+                    label(for='#modal__agree') Отправляя заявку, я принимаю 
+                        a(href="#") Пользовательское соглашение
+#modalEvents.modal.disabled
+    .modal__wrap.animated.fadeInDown
+        .close#modal-close
+            svg.t-popup__close-icon(width='23px', height='23px', viewBox='0 0 23 23', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                g(stroke='none', stroke-width='1', fill-rule='evenodd')
+                    rect(transform='translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) ', x='10.3137085', y='-3.6862915', width='2', height='30')
+                    rect(transform='translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) ', x='10.3137085', y='-3.6862915', width='2', height='30')
+        .modal__body
+            .events__item
+                .events__name June 12
+                .events__position.events__position--top Section of psychology, studying mental phenomena in terms
+                .events__position Moscow Sevastopol Avenue 28/1
+                .events__position beginning 20:00
+                .events__text Section of psychology, studying mental phenomena in terms of their relationship with disease. The field of clinical psychology includes the diagnosis of mental health, the organization and conduct of research to understand psychophysiological problems and the development, implementation and evaluation of psychological correction. Section of psychology, studying mental phenomena in terms of their relationship with disease. The field of clinical psychology includes the diagnosis of mental health, the organization and conduct of research to understand psychophysiological problems and the development, implementation and evaluation of psychological correction. Section of psychology, studying mental phenomena in terms of their relationship with disease. The field of clinical psychology includes the diagnosis of mental health, the organization and conduct of research to understand psychophysiological problems and the development, implementation and evaluation of psychological correction.
 
-        h3 Воспользуйтесь формой обратной связи
-        .sendform__text В течении 48 часов я с вами свяжусь
-        form.modal__form(action="#")   
-            .form-line.phone
-                input(type='text', name='name', placeholder='Имя', required)
-            .form-line.phone
-                input(type='email', name='email', placeholder='E-mail', required)
-            .form-line.phone
-                input#modal__phone.phone-mask(type='text', name='phone', placeholder='+ 7 (___) ___ – __ – __ ', required)
-            .form-line
-                input.btn(type='submit', value='Отправить')
-            .agree-line
-                input#modal__agree(type='checkbox', checked='', disabled)
-                label(for='#modal__agree') Отправляя заявку, я принимаю 
-                    a(href="#") Пользовательское соглашение
+ 
+
+
+#modalVideo.modal.disabled
+    .modal__wrap.animated.fadeInDown
+        .close#modal-close
+            svg.t-popup__close-icon(width='23px', height='23px', viewBox='0 0 23 23', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                g(stroke='none', stroke-width='1', fill-rule='evenodd')
+                    rect(transform='translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) ', x='10.3137085', y='-3.6862915', width='2', height='30')
+                    rect(transform='translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) ', x='10.3137085', y='-3.6862915', width='2', height='30')
+        .modal__body
+            .video
+                .video__content
+                    iframe(src='https://www.youtube.com/embed/f7zk9qLbSSs' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='' id="YouTube")
+                ul.video__caption
+                    li.active.video__item 
+                        .video__img 
+                            img(src="assets/img/video/video-pic.jpg", alt="video" data-video="https://www.youtube.com/embed/f7zk9qLbSSs")
+                        .video__text Профессиональный верифкатор
+                    li.video__item  
+                        .video__img 
+                            img(src="assets/img/video/video-pic.jpg", alt="video" data-video="https://www.youtube.com/embed/lz5H7M15b_E")
+                        .video__text 2-я вкладка
+                    li.video__item  
+                        .video__img 
+                            img(src="assets/img/video/video-pic.jpg", alt="video" data-video="https://www.youtube.com/embed/P5csD0SX8jI")
+                        .video__text 3-я вкладка
+                    li.video__item  
+                        .video__img 
+                            img(src="assets/img/video/video-pic.jpg", alt="video" data-video="https://www.youtube.com/embed/f7zk9qLbSSs")
+                        .video__text 4-я вкладка
+                    li.video__item  
+                        .video__img 
+                            img(src="assets/img/video/video-pic.jpg", alt="video" data-video="https://www.youtube.com/embed/lz5H7M15b_E")
+                        .video__text 5-я вкладка

@@ -1,10 +1,12 @@
 .consult {
+    margin-bottom: 99px;
     .subtitle {
         text-align: center;
+        margin-top: -15px;
     }
     &__body {
         display: flex;
-        padding: 90px 195px 0 302px;
+        padding: 84px 18px 0 142px;
     }
     &__about {
         width: 50%;
@@ -12,8 +14,13 @@
             color: #9C9C9C;
             margin: 0;
         }
+        .btn {
+            margin-top: 31px;
+        }
     }
     &__cite {
+        max-width: 533px;
+        padding-bottom: 51px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -28,7 +35,10 @@
         letter-spacing: 0.01em;
     }
     &__position  {
+        margin: 0;
+        line-height: 1.6;
         padding-left: 0;
+        padding-bottom: 23px;
         list-style-type: decimal; 
         list-style-position: inside; 
         li {
@@ -39,6 +49,7 @@
     &__slider {
         &-wrap {
             width: 50%;
+            padding-left: 23px;
         }
         &-caption {
             width: 100%;;
@@ -47,6 +58,7 @@
             font-size: 20px;
             line-height: 27px;
             color: #9C9C9C;
+            margin-bottom: 38px;
             .slick-list {
                 padding: 0!important;
             }
@@ -54,6 +66,9 @@
                 width: 100%!important;
                 display: flex;
                 justify-content: space-between;
+                &:before, &:after {
+                    content: none;
+                }
             }
             .slick-current {
                 color: $text;
@@ -61,7 +76,7 @@
                     &:after {
                         content: "";
                         position: absolute;
-                        bottom: 0;
+                        bottom: 1px;
                         left: 0;
                         width: 100%;
                         height: 1px;

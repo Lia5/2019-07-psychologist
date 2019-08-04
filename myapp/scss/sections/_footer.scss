@@ -8,9 +8,10 @@
     .wrap {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        max-width: 1826px;
     }
     .logo {
+        padding-left: 39px;
         text-align: center;
         margin-bottom: 36px;
     }
@@ -22,6 +23,9 @@
             display: block;
             color: #fff;
         }
+    }
+    &__center {
+        padding-left: 46px;
     }
 }
 .rights {

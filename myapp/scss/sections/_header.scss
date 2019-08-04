@@ -8,6 +8,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 8px 0 14px;
 }
 .reg {
     display: flex;
@@ -16,20 +17,27 @@ nav {
     display: none;
 }
 header {
-    padding: 50px 50px 25px 50px;
+    padding: 18px 34px 18px 27px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    max-width: 1819px;
+
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     .wrap {
         min-height: 100vh;
+
     }
+}
+#top.wrap {
+    max-width: 1819px;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 118px;
 }
 .lang {
     position: relative;
@@ -111,7 +119,7 @@ header {
     }
     a {
         display: block;
-        padding: 20px 30px;
+        padding: 20px 35px;
     }
 }
 .header {
@@ -119,8 +127,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    &__wrap {
+        padding: 0 0 85px 156px;
+    }
 }
 .header-bottom {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -142,6 +154,7 @@ header {
 }
 .btn-scroll {
     position: absolute;
+    top: -36px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, 0);
@@ -151,6 +164,7 @@ header {
     line-height: 10px;
     letter-spacing: 0.27em;
     text-transform: uppercase;
+    padding: 30px 30px 67px;
     &:before, &:after {
         content: "";
         position: absolute;
@@ -159,13 +173,13 @@ header {
         width: 1px;
         height: 50px;
         background: $text;
-        top: 12px;
+        bottom: 0;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, 0)
     }
     &:after {
-        top: 57px;
+        bottom: 0;
         width: 5px;
         height: 5px;
         left: 50%;

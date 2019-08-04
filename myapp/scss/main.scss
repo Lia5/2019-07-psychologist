@@ -35,7 +35,10 @@ body {
 		// }
 	}
 }
-
+.body-modal {
+	max-height: 100vh;
+	overflow: hidden;
+}
 .img-responsive {
 	display: block;
 	max-width: 100%;
@@ -107,7 +110,7 @@ ul,li {
 	font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
 	font-weight: 400;
 	font-size: 40px;
-	line-height: 53px;
+	line-height: 1;
 	text-align: center;
 	position: relative;
 	text-align: center;
