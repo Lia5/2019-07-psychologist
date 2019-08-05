@@ -84,12 +84,11 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // display: none;
-        height: 0;
+        display: none;
         opacity: 0;
         transition: 2.3s;
+        text-transform: uppercase;
         &.active {
-            height: auto;
             display: flex;
             opacity: 1;
         }

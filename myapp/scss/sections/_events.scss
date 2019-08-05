@@ -50,7 +50,8 @@
         text-transform: uppercase;
         padding-bottom: 14px;
         &--top {
-            max-width: 442px;
+            // max-width: 442px;
+            padding-right: 128px;
             border-bottom: 1px solid rgba(229, 229, 229, 0.5);
             margin-bottom: 45px;
         }
