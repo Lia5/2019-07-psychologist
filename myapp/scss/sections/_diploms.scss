@@ -1,9 +1,10 @@
 .diploms {
     .title {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     &__wrap {
         margin-bottom: 89px;
+        padding: 0 35px;
     }
     &__item {
         // max-width: 327px;
@@ -43,7 +44,7 @@
         }
         .slick-dots {
             display: block;
-            margin-top: 63px;
+            margin-top: 67px;
             button {
                 outline: none;
             }

@@ -336,7 +336,7 @@
     .events {
         margin-bottom: 82px;
         &__block {
-            padding-bottom: 82px;
+            padding-bottom: 32px;
         }
         &-deviz {
             min-height: 666px;
@@ -442,7 +442,7 @@
         &__slider .slick-dots {
             margin-top: 42px;
         }
-        .diploms__slider {
+        &__slider {
             .arrow {
                 &-prev {
                     left: 39%;
@@ -590,7 +590,7 @@
         }
         &__block {
             text-align: center;
-            padding: 33px 9px 115px;
+            padding: 33px 9px 108px;
         }
         &__name {
             margin-bottom: 38px;
@@ -631,9 +631,144 @@
         padding: 8px 19px;
     }
     .consult {
+        margin-bottom: 14px;
         .subtitle {
             font-size: 15px;
             margin-top: 9px;
+        }
+        &__body {
+            padding: 34px 9px 10px 9px;
+        }
+        &__slider-caption {
+            margin-bottom: 23px;
+        }
+        &__slider-wrap {
+            padding: 0;
+        }
+        .slick-dots {
+            margin-top: 28px;
+        }
+        .arrow-prev {
+            left: 33%;
+        }
+        .arrow-next {
+            left: 67%;
+        }
+        &__about {
+            padding-top: 58px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 43px;
+            max-width: 298px;
+        }
+        &__cite {
+            position: relative;
+            padding-bottom: 0px;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 55px;
+            .logo {
+                position: absolute;
+                right: 24px;
+                bottom: 0;
+                font-size: 25px;
+                line-height: 25px;
+            }
+        }
+        &__about {
+            margin-bottom: 0;
+            .btn {
+                margin: 21px auto;
+                display: block;
+                max-width: 270px;
+            }
+        }
+
+    }
+    .events {
+        margin-bottom: 54px;
+        .title {
+            margin-bottom: 6px;
+        }
+        &__body .events-deviz {
+            min-height: 324px;
+            background-size: 100%;
+        }
+        &-deviz {
+            min-height: 324px;
+        }
+        &__item {
+            padding-right: 0;
+        }
+        &__block {
+            padding: 59px 11px 76px 11px;
+        }
+        &__position--top {
+            padding-right: 0;
+            padding-bottom: 21px;
+            margin-bottom: 31px;
+        }
+        &__text {
+            margin-top: 13px;
+            max-height: 219px;
+            line-height: 1.6;
+        }
+        &__video {
+            padding-left: 32px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .slick-arrow {
+            bottom: -39px;
+        }
+        .arrow {
+            &-prev {
+                left: 46%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+            &-next {
+                left: 56%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .diploms {
+        .title {
+            margin-bottom: 18px;
+        }
+        &__item {
+            margin: 0 3px;
+        }
+        &__slider {
+            .slick-arrow {
+                bottom: -16px;
+            }
+            .slick-dots {
+                margin-top: 37px;
+            }
+            .arrow-prev {
+                left: 25%;
+            }
+            .arrow-next {
+                left: 74%;
+            }
+        }
+        &__wrap {
+            margin-bottom: 60px;
+        }
+    }
+    .footer {
+        padding: 35px 39px 35px;
+        &__contact {
+            margin-bottom: 29px;
+            .logo {
+                font-size: 30px;
+                line-height: 30px;
+                margin-bottom: 38px;
+            }
         }
     }
 }

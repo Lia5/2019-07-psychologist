@@ -31,7 +31,7 @@
         width: 50%;
         background-color: #75787E;
         color: #fff;
-        padding: 144px 152px 215px 68px;
+        padding: 144px 152px 162px 68px;
     }
     &__name {
         font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;
@@ -77,27 +77,33 @@
         padding-bottom: 42px;
     }
     &__video {
+        display: block;
+        margin-top: 49px;
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         font-weight: 500;
         line-height: 2.19;
         letter-spacing: 0.01em;
         text-transform: uppercase;
         color: #97DFEC;
-        position: relative;
-        &:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            width: calc(100% - 26px);
-            height: 1px;
-            left: 0;
-            bottom: -10px;
-            background: #97DFEC;
+        padding-bottom: 10px;
+        span {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                width: calc(100% - 26px);
+                height: 1px;
+                left: 0;
+                bottom: -10px;
+                background: #97DFEC;
+            }
         }
     }
     .slick-arrow {
         position: absolute;
-        bottom: -37px;
+        bottom: 52px;
     }
     .arrow {
         &-prev {
