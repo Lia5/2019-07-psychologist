@@ -493,6 +493,9 @@
                 }
             }
         }
+        &__slider {
+            padding-bottom: 0px;
+        }
     }
     .events{
         &__body {
@@ -507,8 +510,22 @@
     } 
     .consult {
         &__slider-wrap {
-            display: none;
+            order: -1;
         }
+    }
+    .consult__slider-caption {
+        .slick-track {
+        //  width: auto!important;
+            display: block;
+            justify-content: space-between;
+        }
+        .slick-slide {
+            display: none;
+            &.slick-current {
+                display: block;
+            }
+        }
+        
     }
     .diploms {
         &__item {
@@ -535,6 +552,7 @@
     }
     header {
         min-height: 100vh;
+        min-height: 701px;
         padding: 9px 3px 54px 10px;
     }
     .main-title {
@@ -545,55 +563,72 @@
         line-height: 40px;
     }
     #top.wrap {
-        margin-bottom: 52px;
+        margin-bottom: 49px;
     }
     .bio {
         margin-bottom: 53px;
+        .title {
+            margin-bottom: 9px;
+        }
+        &-deviz {
+            min-height: 325px;
+            padding: 8px 19px;
+            &__text {
+                font-size: 14px;
+                line-height: 28px;
+                margin-bottom: 0;
+            }
+            .logo {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+        &__body {
+            .bio-deviz {
+                background-size: 100%;
+            }
+        }
+        &__block {
+            text-align: center;
+            padding: 33px 9px 115px;
+        }
+        &__name {
+            margin-bottom: 38px;
+            text-align: left;
+        }
+        &__position {
+            text-align: left;
+            padding-bottom: 18px;
+            margin-bottom: 39px;
+            letter-spacing: 0.04em;
+        }
+        &__item {
+            line-height: 25px;
+        }
+        &__slider {
+            text-align: left;
+        }
+        .arrow {
+            &-next {
+                right: auto;
+                left: calc(50% + 24px);
+                margin-right: -50%;
+                transform: translate(-50%, 0);
+            }
+            &-prev {
+                right: auto;
+                left: calc(50% - 24px);
+                margin-right: -50%;
+                transform: translate(-50%, 0), rotate(180deg);
+            }
+        }
+        &__video {
+            bottom: -60px;
+        }
+
     }
-    .bio .title {
-        margin-bottom: 9px;
-    }
-    .bio-deviz {
-        min-height: 325px;
-    }
-    .bio-deviz, .events-deviz {
+  .events-deviz {
         padding: 8px 19px;
-    }
-    .bio__block {
-        text-align: center;
-        padding: 36px 6px 106px;
-    }
-    .bio__name {
-        margin-bottom: 38px;
-        text-align: left;
-    }
-    .bio__position {
-        text-align: left;
-        padding-bottom: 18px;
-        margin-bottom: 39px;
-    }
-    .bio__item {
-        line-height: 25px;
-    }
-    .bio__slider {
-        text-align: left;
-    }
-    .bio .arrow {
-        &-next {
-            right: auto;
-            left: calc(50% + 24px);
-            margin-right: -50%;
-            transform: translate(-50%, 0);
-        }
-        &-prev {
-            right: auto;
-            left: calc(50% - 24px);
-            margin-right: -50%;
-            transform: translate(-50%, 0), rotate(180deg);
-        }
-    }
-    .bio__video {
-        bottom: -60px;
     }
     .consult {
         .subtitle {

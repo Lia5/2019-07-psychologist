@@ -89,6 +89,15 @@ $(function() {
             arrows: true,
             centerMode: true,
             focusOnSelect: true,
+            responsive: [
+                {
+                  breakpoint: 320,
+                  settings: {
+                    slidesToShow: 1,
+                    centerMode: false
+                  }
+                }
+              ]
 
         });
         $('.consult__slider-for').slick({
