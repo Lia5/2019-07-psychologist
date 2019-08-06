@@ -773,6 +773,31 @@
     }
 }
 @media only screen and (max-width: 374px) {
+    .main-menu.active ul {
+        margin-top: 0;
+    }
+    .main-menu a {
+        padding: 4px 30px;
+    }
+    header {
+        background-size: cover;
+        min-height: 100vh;
+    }
+    .header-bottom {
+        top: 37px;
+    }
+    .btn-scroll {
+        top: -48px;
+        padding-bottom: 42px;
+        &:before {
+            height: 34px;
+        }
+    }
+    .main-title {
+        padding-top: 0;
+        font-size: 35px;
+        line-height: 33px;
+    }
     .bio{
         &__body {
             .bio {
@@ -785,9 +810,12 @@
                 }
             }
         }
+        &-deviz {
+            min-height: 276px;
+        }
     }
     .events-deviz {
-        min-height: 459px;
+        min-height: 274px;
     }
     .diploms {
         &__item {
