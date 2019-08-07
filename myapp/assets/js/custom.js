@@ -14,6 +14,17 @@ $(function() {
         $('html, body').animate({
             scrollTop: $($div).offset().top
         }, 1000);
+        if ( window.innerWidth < 1341 || window.screen.width < 1341) {
+            $('.main-menu').removeClass('active');
+            $('.menu-toggle').removeClass('active');
+            $('.lang').removeClass('display-block');
+            $('body').css('overflow', 'visible');
+            if ( window.innerWidth < 535 || window.screen.width < 535) {
+                $('.header-social').css('display', 'none');
+                $('.download-viz').css('display', 'none');
+            }
+        }
+
     });
 
     //mask - select-number form
