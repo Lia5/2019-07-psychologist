@@ -8,19 +8,20 @@
         .modal__body
             h3 Воспользуйтесь формой обратной связи
             .modal__text В течении 48 часов я с вами свяжусь
-            form.modal__form(action="#")   
-                .form-line.phone
-                    input(type='text', name='name', placeholder='Имя', required)
-                .form-line.phone
-                    input(type='email', name='email', placeholder='E-mail', required)
-                .form-line.phone
-                    input#modal__phone.phone-mask(type='text', name='phone', placeholder='+ 7 (___) ___ – __ – __ ', required)
-                .form-line
-                    input.btn(type='submit', value='Отправить')
-                .agree-line
-                    input#modal__agree(type='checkbox', checked='', disabled)
-                    label(for='#modal__agree') Отправляя заявку, я принимаю 
-                        a(href="#") Пользовательское соглашение
+            .modal__form
+                form(action="#")   
+                    .form-line.phone
+                        input(type='text', name='name', placeholder='Имя', required)
+                    .form-line.phone
+                        input(type='email', name='email', placeholder='E-mail', required)
+                    .form-line.phone
+                        input#modal__phone.phone-mask(type='text', name='phone', placeholder='+ 7 (___) ___ – __ – __ ', required)
+                    .form-line
+                        input.btn(type='submit', value='Отправить')
+                    .agree-line
+                        input#modal__agree(type='checkbox', checked='', disabled)
+                        label(for='#modal__agree') Отправляя заявку, я принимаю 
+                            a(href="#") Пользовательское соглашение
 #modalEvents.modal.disabled
     .modal__wrap.animated.fadeInDown
         .close#modal-close
