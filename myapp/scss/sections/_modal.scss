@@ -23,27 +23,37 @@
     overflow: auto;
     padding: 40px 45px;    
   }
+  &__form {
+    padding: 0 24px;
+  }
   h3 {
+    font-family: "PlayfairDisplay", 'Times New Roman', Times, serif;
+    font-weight: 400;
     font-size: 25px;
     line-height: 1.12;
     text-align: center;
     letter-spacing: 0.01em;
+    margin: 0 0 11px;
   }
   &__text {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
     color: #747474;
+    margin-bottom: 23px;
   }
   .form-line {
       width: 100%;
       input {
+          font-size: 14px;
+          font-family: "Montserrat";
           width: 100%;
           padding: 13px 16px;
           margin-bottom: 25px;
           border: 1px solid #DBDBDB;
           &::placeholder {
             color: #747474;
+            font-family: "Montserrat";
           }
           &:active, &:focus {
             border: 1px solid rgba(117, 120, 126, 0.73);
@@ -53,7 +63,7 @@
       .btn {
           border: 1px solid $accent;
           width: 100%;
-          margin-top: 20px;
+          margin-top: 0;
           color: #333;
           &:hover {
               background-color: #AFEDF8;;
@@ -63,6 +73,12 @@
           }
       }
   }
+}
+#modalForm {
+  .modal__body {
+    padding: 35px 60px;
+  }
+  
 }
 .close {
     position: absolute;
@@ -183,8 +199,29 @@
   #modalForm .modal__wrap {
     max-width: 439px;
   }
-  #modalEvents .modal__wrap {
-    max-width: 959px;
+  #modalEvents {
+    .modal__wrap {
+      max-width: 959px;
+    }
+    .modal__body {
+      background: #75787E;
+      box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.32);
+    }
+    .events {
+      &__name {
+        color: #fff;
+      }
+      &__position {
+        color: #EFF3F7;
+        &--top {
+          color: #fff;
+        }
+      }
+      &__text {
+        color: #DBDCDE;
+        max-height: none;
+      }
+    }
   }
   #modalVideo .modal__wrap {
     width: 1512px;
