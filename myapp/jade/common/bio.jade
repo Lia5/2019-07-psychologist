@@ -3,13 +3,13 @@ section.bio#bio
         .title__behind Biography
     .bio__wrap
         .bio__body
-            .bio-deviz(style="background-image: url('assets/img/bio-bg.jpg')")
-            .bio__block
+            .bio-deviz(style="background-image: url('assets/img/bio-bg.jpg')" data-anim="bioanim")
+            .bio__block(data-anim="bioanim")
         .wrap
-            .bio-deviz
-                .bio-deviz__text  “Высокое напряжение опасно для жизни “ 
-                .logo AnnaMakarova
-            .bio__block 
+            .bio-deviz(data-anim="bioanim")
+                .bio-deviz__text(data-anim="bioanim2")   “Высокое напряжение опасно для жизни “ 
+                .logo(data-anim="bioanim2")  AnnaMakarova
+            .bio__block(data-anim="bioanim") 
                 .bio__name Макарова Анна Евгеньевна
                 ul.bio__position 
                     li Клинический психолог
@@ -27,5 +27,5 @@ section.bio#bio
                     .bio__item 
                         span 2019 
                         .bio__text г Сертифицированный специалист программы «Профайлинг». Московский Институт развития бизнеса и Личности (ИРБЛ г.Москва) 2019 г Дипломированный специалист в сфере "Психологии обеспечения кадровой безопасности». Академия Информационных Систем (АИС г.Москва) 2018 г Гештальт терапевт. Московский Институт гештальт терапии и консультирования. 2019 г Диплом и профессиональной переподготовки «Психологическое Консультирование с использованием эриксоновской психотерапии и гипноза. Столичный Институт Профессионального Образования (АНО ДПО «СИПО»г.Москва)
-                a(href='#modalVideo').bio__video.modal-open смотреть Видео  &#10230;
+                a(href='#modalVideo' data-anim="bioanim3").bio__video.modal-open смотреть Видео  &#10230;
 

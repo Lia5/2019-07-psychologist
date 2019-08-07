@@ -12,6 +12,7 @@
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, 0);
+        overflow: hidden;
     }
     &__wrap {
         position: relative;
@@ -19,19 +20,30 @@
     .wrap {
         position: relative;
         display: flex;
+        overflow: hidden;
     }
     &-deviz {
+        transform: translateX(100%);
+        transition: 1.5s;
         width: 50%;
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
+        &.active {
+            transform: translateX(0);
+        }
     }
     &__block {
+        transform: translateX(-100%);
+        transition: 1.5s;
         width: 50%;
         background-color: #75787E;
         color: #fff;
         padding: 144px 152px 162px 68px;
+        &.active {
+            transform: translateX(0);
+        }
     }
     &__name {
         font-family: 'PlayfairDisplay', 'Times New Roman', Times, serif;

@@ -1,5 +1,5 @@
 .wrap#top
-	header
+	header(data-anim="headeranim")
 		nav
 			.nav
 				.lang
@@ -16,19 +16,19 @@
 
 					nav.main-menu 
 						ul
-							li
+							li(data-anim="headeranim")
 								a(href="#" data-div="#bio") Биография
-							li
+							li(data-anim="headeranim")
 								a(href="#" data-div="#consult") Консультации
-							li
+							li(data-anim="headeranim")
 								a(href="#" data-div="#diploms") Дипломы
-							li.logo
-								a(href="#" data-div="#top") AnnaMakarova
-							li
+							li.logo(data-anim="headeranim")
+								a(href="#" data-div="#top" ) AnnaMakarova
+							li(data-anim="headeranim")
 								a(href="#" data-div="#events") Мероприятия
-							li
+							li(data-anim="headeranim")
 								a(href="#modalVideo").modal-open Видео
-							li
+							li(data-anim="headeranim")
 								a(href="#modalForm").modal-open Контакты
 				.social
 					a(href="#").social__icon
@@ -36,11 +36,11 @@
 					a(href="#").social__icon
 						img(src="assets/img/icons/mail.svg", alt="mail")
 		.header
-			.header__wrap
+			.header__wrap(data-anim="headeranim")
 				h1.main-title Анна Макарова
 				.subtitle клинический психолог
-		.header-bottom 
-			.social.header-social
+		.header-bottom
+			.social.header-social(data-anim="headeranim") 
 				a(href="#").social__icon
 					img(src="assets/img/icons/fb.svg", alt="mail")
 				a(href="#").social__icon
@@ -48,7 +48,7 @@
 				a(href="#").social__icon
 					img(src="assets/img/icons/insta.svg", alt="mail")
 			a(href="#" data-div="#bio").btn-scroll Scroll
-			a(href="#").download-viz
+			a(href="#").download-viz(data-anim="headeranim") 
 				.download-viz__text Загрузить визитку
 				.social__icon
 					img(src="assets/img/icons/icon_user.svg", alt="icon_user")

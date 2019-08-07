@@ -224,6 +224,51 @@ $(".modal-open").click(function (e){
         }
     });
 
+    //animation 
+    // $('.fixed-nav li').on('click', function(e){
+	// 	var dataName = $(this).attr('data-menuAnchor');
+	// 	e.preventDefault();
+	// 	var id = $('[data-anchor="'+ dataName + '"]');
+	// 	$('html,body').stop().animate({ scrollTop: $(id).offset().top }, 1000);
+	// });
+
+	function AnimActive() {
+		$('*[data-anim]').each(function(e) {
+			var dataName = $(this).attr('data-anim');
+            var posit = $(this).offset().top - 400;
+            if (dataName=="bioanim3") {
+                var posit = $(this).offset().top - 600;
+            }
+            if (dataName=="headeranim") {
+                var posit = $(this).offset().top - 10000;
+            }
+            if ( window.innerWidth < 1341 || window.screen.width < 1341) {
+                var posit = $(this).offset().top - 1000;
+                if (dataName=="bioanim3") {
+                    var posit = $(this).offset().top - 800;
+                }
+            }
+			var windowPostition = $(window).scrollTop();
+
+			if (windowPostition >= posit) {
+				$('*[data-anim="'+ dataName + '"]').removeClass('active');
+				$('[data-anim="'+ dataName + '"]').addClass('active');
+			} else {
+                $('*[data-anim="'+ dataName + '"]').removeClass('active');
+            }
+
+		});
+	};
+
+	AnimActive();
+	$(window).scroll(function() {
+		AnimActive();
+	});
+
+	$(window).resize(function() {
+		AnimActive();
+	});
+
 });
 
 
@@ -258,34 +303,5 @@ document.addEventListener('DOMContentLoaded', function(){
           el.style[styleName] = '';
         }
       }
-//tabs
-	// store tabs variable
-	var myTabs = document.querySelectorAll("ul.header__tabs > li");
-    function myTabClicks(tabClickEvent) {
-		for (var i = 0; i < myTabs.length; i++) {
-			myTabs[i].classList.remove("active");
-		}
-		var clickedTab = tabClickEvent.currentTarget;
-		clickedTab.classList.add("active");
-		tabClickEvent.preventDefault();
-		var myContentPanes = document.querySelectorAll(".tab-pane");
-		for (i = 0; i < myContentPanes.length; i++) {
-			myContentPanes[i].classList.remove("active");
-		}
-        var anchorReference = tabClickEvent.target;
-        console.log(anchorReference);
-        var activePaneId = anchorReference.getAttribute("href");
-        console.log(activePaneId);
-        var activePane = document.querySelector(activePaneId);
-        console.log(activePaneId);
-		activePane.classList.add("active");
-    }
-    for (i = 0; i < myTabs.length; i++) {
-		myTabs[i].addEventListener("click", myTabClicks)
-	}
-
-
-
-
 
 });

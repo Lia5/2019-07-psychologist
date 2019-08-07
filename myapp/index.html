@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="top" class="wrap">
-      <header>
+      <header data-anim="headeranim">
         <nav>
           <div class="nav">
             <div class="lang">
@@ -31,13 +31,13 @@
               </div>
               <nav class="main-menu"> 
                 <ul>
-                  <li><a href="#" data-div="#bio">Биография</a></li>
-                  <li><a href="#" data-div="#consult">Консультации</a></li>
-                  <li><a href="#" data-div="#diploms">Дипломы</a></li>
-                  <li class="logo"><a href="#" data-div="#top">AnnaMakarova</a></li>
-                  <li><a href="#" data-div="#events">Мероприятия</a></li>
-                  <li><a href="#modalVideo" class="modal-open">Видео</a></li>
-                  <li><a href="#modalForm" class="modal-open">Контакты</a></li>
+                  <li data-anim="headeranim"><a href="#" data-div="#bio">Биография</a></li>
+                  <li data-anim="headeranim"><a href="#" data-div="#consult">Консультации</a></li>
+                  <li data-anim="headeranim"><a href="#" data-div="#diploms">Дипломы</a></li>
+                  <li data-anim="headeranim" class="logo"><a href="#" data-div="#top">AnnaMakarova</a></li>
+                  <li data-anim="headeranim"><a href="#" data-div="#events">Мероприятия</a></li>
+                  <li data-anim="headeranim"><a href="#modalVideo" class="modal-open">Видео</a></li>
+                  <li data-anim="headeranim"><a href="#modalForm" class="modal-open">Контакты</a></li>
                 </ul>
               </nav>
             </div>
@@ -45,13 +45,13 @@
           </div>
         </nav>
         <div class="header">
-          <div class="header__wrap">
+          <div data-anim="headeranim" class="header__wrap">
             <h1 class="main-title">Анна Макарова</h1>
             <div class="subtitle">клинический психолог</div>
           </div>
         </div>
-        <div class="header-bottom"> 
-          <div class="social header-social"><a href="#" class="social__icon"><img src="assets/img/icons/fb.svg" alt="mail"></a><a href="#" class="social__icon"><img src="assets/img/icons/youtube.svg" alt="mail"></a><a href="#" class="social__icon"><img src="assets/img/icons/insta.svg" alt="mail"></a></div><a href="#" data-div="#bio" class="btn-scroll">Scroll</a><a href="#" class="download-viz">
+        <div class="header-bottom">
+          <div data-anim="headeranim" class="social header-social"> <a href="#" class="social__icon"><img src="assets/img/icons/fb.svg" alt="mail"></a><a href="#" class="social__icon"><img src="assets/img/icons/youtube.svg" alt="mail"></a><a href="#" class="social__icon"><img src="assets/img/icons/insta.svg" alt="mail"></a></div><a href="#" data-div="#bio" class="btn-scroll">Scroll</a><a href="#" data-anim="headeranim" class="download-viz"> 
             <div class="download-viz__text">Загрузить визитку</div>
             <div class="social__icon"><img src="assets/img/icons/icon_user.svg" alt="icon_user"></div></a>
         </div>
@@ -63,15 +63,15 @@
       </div>
       <div class="bio__wrap">
         <div class="bio__body">
-          <div style="background-image: url('assets/img/bio-bg.jpg')" class="bio-deviz"></div>
-          <div class="bio__block"></div>
+          <div style="background-image: url('assets/img/bio-bg.jpg')" data-anim="bioanim" class="bio-deviz"></div>
+          <div data-anim="bioanim" class="bio__block"></div>
         </div>
         <div class="wrap">
-          <div class="bio-deviz">
-            <div class="bio-deviz__text"> “Высокое напряжение опасно для жизни “ </div>
-            <div class="logo">AnnaMakarova</div>
+          <div data-anim="bioanim" class="bio-deviz">
+            <div data-anim="bioanim2" class="bio-deviz__text">  “Высокое напряжение опасно для жизни “ </div>
+            <div data-anim="bioanim2" class="logo"> AnnaMakarova</div>
           </div>
-          <div class="bio__block"> 
+          <div data-anim="bioanim" class="bio__block"> 
             <div class="bio__name">Макарова Анна Евгеньевна</div>
             <ul class="bio__position"> 
               <li>Клинический психолог</li>
@@ -90,7 +90,7 @@
               <div class="bio__item"> <span>2019 </span>
                 <div class="bio__text">г Сертифицированный специалист программы «Профайлинг». Московский Институт развития бизнеса и Личности (ИРБЛ г.Москва) 2019 г Дипломированный специалист в сфере "Психологии обеспечения кадровой безопасности». Академия Информационных Систем (АИС г.Москва) 2018 г Гештальт терапевт. Московский Институт гештальт терапии и консультирования. 2019 г Диплом и профессиональной переподготовки «Психологическое Консультирование с использованием эриксоновской психотерапии и гипноза. Столичный Институт Профессионального Образования (АНО ДПО «СИПО»г.Москва)</div>
               </div>
-            </div><a href="#modalVideo" class="bio__video modal-open">смотреть Видео  &#10230;</a>
+            </div><a href="#modalVideo" data-anim="bioanim3" class="bio__video modal-open">смотреть Видео  &#10230;</a>
           </div>
         </div>
       </div>
@@ -145,11 +145,11 @@
       </div>
       <div class="events__wrap">
         <div class="events__body">
-          <div class="events__block"> </div>
-          <div style="background-image: url('assets/img/events-bg.jpg')" class="events-deviz"></div>
+          <div data-anim="eventanim" class="events__block"> </div>
+          <div data-anim="eventanim" style="background-image: url('assets/img/events-bg.jpg')" class="events-deviz"></div>
         </div>
         <div class="wrap">
-          <div class="events__block"> 
+          <div data-anim="eventanim" class="events__block"> 
             <div class="events__slider">
               <div class="events__item">
                 <div class="events__name">June 12</div>
@@ -174,7 +174,7 @@
               </div>
             </div>
           </div>
-          <div class="events-deviz"></div>
+          <div data-anim="eventanim" class="events-deviz"> </div>
         </div>
       </div>
     </section>
@@ -315,7 +315,8 @@
           <div class="logo">Anna Makarova</div>
           <div class="rights">Все права защищены. Анна Макарова. © 2019</div>
         </div>
-        <div class="footer__contact"> <a href="tel:+70000000000"> 7 (000) 000 00 00 </a><a href="mailto:contact@makarovapsychology.co">contact@makarovapsychology.com</a></div>
+        <div class="footer__contact"> <a href="tel:+70000000000">
+            <input value="70000000000" disabled class="phone-mask"></a><a href="mailto:contact@makarovapsychology.co">contact@makarovapsychology.com</a></div>
       </div>
     </footer>
     <script src="assets/js/libs.min.js"></script>

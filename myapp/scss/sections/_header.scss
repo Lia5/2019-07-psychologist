@@ -23,15 +23,31 @@ header {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-
+    position: relative;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     .wrap {
         min-height: 100vh;
-
     }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #fff;
+       transition: 1s ease-out;
+       transition-delay: 1s;
+        
+        
+    }
+    &.active:after {
+        width: 0;
+    }
+
 }
 #top.wrap {
     max-width: 1819px;
@@ -120,6 +136,22 @@ header {
         display: block;
         padding: 20px 35px;
     }
+    li {
+        opacity: 0;
+        transition: 1s;
+        transition-delay: 3s;
+        &.active {
+            opacity: 1;
+        }        
+    }
+    .logo {
+        opacity: 0;
+        transition: 1s;
+        transition-delay: 2s;
+        &.active {
+            opacity: 1;
+        }
+    }
 }
 .header {
     width: 50%;
@@ -127,8 +159,32 @@ header {
     justify-content: center;
     align-items: center;
     &__wrap {
-        padding: 0 0 85px 156px;
+        padding: 0 0 0 156px;
+        transition: 2s;
+        transition-delay: 0.5s;
+        bottom: -100px;
+        position: relative;
+        z-index: 1;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 150%;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            transition: 1s;
+            transition-delay: 0.5s;
+           
+        }
+        &.active {
+            bottom: 0;
+            &:after {
+                height: 0;
+            }
+        }
     }
+
 }
 .header-bottom {
     position: relative;
@@ -145,8 +201,22 @@ header {
         }
     }
 }
+.header-social {
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 4s;
+    &.active {
+        opacity: 1;
+    }   
+}
 .download-viz {
     display: flex;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 4s;
+    &.active {
+        opacity: 1;
+    }   
     &__text {
         margin-right: 10px;
     }
