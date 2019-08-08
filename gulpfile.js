@@ -37,7 +37,7 @@ gulp.task('styles', function() {
 
 gulp.task('js', function() {
 	return gulp.src([
-		'myapp/libs/1.jquery/dist/jquery.min.js',
+		// 'myapp/libs/1.jquery/dist/jquery.min.js',
 		'myapp/libs/3.mask/jquery.maskedinput.min.js',
 		'myapp/libs/2.slick/slick.js',
 		'myapp/libs/fancybox/jquery.fancybox.js'
