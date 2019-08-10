@@ -196,6 +196,10 @@ header {
     &__icon {
         display: block;
         margin-right: 16px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
         &:last-child {
             margin-right: 0;
         }
@@ -257,5 +261,29 @@ header {
         border-left: 1px solid $text;
         border-bottom: 1px solid $text;
     }
+}
+.fb {
+    width:10px;
+    height:19px;
+}
+.yt{
+    width:20px;
+    height:14px;
+}
+.inst {
+    width:18px;
+    height:18px;
+}
+.ph {
+    width:17px;
+    height:17px; 
+}
+.ml {
+    width:20px;
+    height:15px; 
+}
+.us {
+    width:15px;
+    height:18px;  
 }
 //header
