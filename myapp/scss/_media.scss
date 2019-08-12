@@ -62,7 +62,7 @@
     header {	
         max-width: 1236px;	
         padding: 20px 16px 6px 5px;	
-        min-height: 688px;	
+        // min-height: 688px;	
     }	
     .nav {	
         font-size: 14px;	
@@ -538,7 +538,9 @@
             min-height: 847px;
         }
     }
-  
+    .lang {
+        right: 10px;
+    }
     .consult {
         margin-bottom: 72px;
         .subtitle {
@@ -631,7 +633,7 @@
 @media only screen and (max-width: 980px) {
     header {
         // min-height: 677px;
-        min-height: 985px;	     
+        // min-height: 985px;	     
         padding-bottom: 27px;
         background-repeat: no-repeat;
     }
@@ -860,7 +862,7 @@
     header {
         background-size: 146%;
         background-position: center;
-        min-height: 701px;
+        // min-height: 701px;
     }
     .main-title {
         font-size: 40px;
@@ -941,16 +943,30 @@
         min-height: auto;
         align-items: flex-start;
         &-bottom {
-            .header-social, .download-viz {
+            .header-social {
                 display: none;
                 z-index: 7;
+                bottom: 20px;
+                left: 5px;
+                position: fixed;
             }
+            .download-viz {
+                display: none;
+                z-index: 7;
+                bottom: 20px;
+                right: 5px;
+                position: fixed;
+            }
+            
             
         }
     }
+    .lang__text:after {
+        right: -5px;
+    }
     header {
-        min-height: 100vh;
-        min-height: 701px;
+        // min-height: 100vh;
+        // min-height: 701px;
         padding: 9px 3px 54px 10px;
     }
     .main-title {
@@ -1033,7 +1049,7 @@
             bottom: -33px;	
         }
     }
-  .events-deviz {
+    .events-deviz {
         padding: 8px 19px;
     }
     .consult {
