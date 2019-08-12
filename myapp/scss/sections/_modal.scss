@@ -212,7 +212,7 @@
   #modalForm .modal__wrap {
     max-width: 439px;
   }
-  #modalEvents {
+  div[id^="modalEvents-"] {
     .modal__wrap {
       max-width: 959px;
     }
