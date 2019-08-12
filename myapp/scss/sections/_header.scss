@@ -18,9 +18,9 @@ nav {
 }
 header {
     padding: 18px 34px 18px 27px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -29,7 +29,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     .wrap {
-        min-height: 100vh;
+        // min-height: 100vh;
     }
     &:after {
         content: "";
@@ -54,6 +54,8 @@ header {
     width: 100%;
     padding-top: 50px;
     margin-bottom: 118px;
+    height: 100vh;
+    min-height: 450px;
 }
 .lang {
     position: relative;
@@ -218,6 +220,9 @@ header {
         &:last-child {
             margin-right: 0;
         }
+        &:hover {
+            opacity: 0.5;
+        }
     }
 }
 .header-social {
@@ -253,6 +258,9 @@ header {
     letter-spacing: 0.27em;
     text-transform: uppercase;
     padding: 30px 30px 67px;
+    &:hover {
+        opacity: 0.8;
+    }
     &:before, &:after {
         content: "";
         position: absolute;

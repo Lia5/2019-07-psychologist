@@ -3,7 +3,7 @@
     header {
         background-image: url('../img/header-bg-pl.jpg');
         background-size: cover;
-        min-height: 985px;
+        // min-height: 985px;
     } 
 }
 @media only screen and (min-width: 769px) {
@@ -58,8 +58,232 @@
     }
 }
 
+@media only screen and (max-width: 1340px) {	
+    header {	
+        max-width: 1236px;	
+        padding: 20px 16px 6px 5px;	
+        min-height: 688px;	
+    }	
+    .nav {	
+        font-size: 14px;	
+    }	
+    .main-menu a {	
+        padding: 20px 22px;	
+    }	
+    .ph {	
+        width:11px;	
+        height:11px; 	
+    }	
+    .ml {	
+        width:13px;	
+        height:10px; 	
+    }	
+    .main-menu ul {	
+        padding-right: 27px;	
+    }	
+    .main-title {	
+        font-size: 59px;	
+    }	
+    .subtitle {	
+        font-size: 14px;	
+    }	
+    .header-bottom {	
+        padding: 56px 0 0 15px;	
+        .social__icon {	
+            margin-right: 6px;	
+        }	
+    }	
+    .btn-scroll {	
+        top: 26px;	
+        padding-bottom: 42px;	
+        &:before {	
+            height: 35px;	
+        }	
+    }	
+    .download-viz__text {	
+        font-size: 14px;	
+    }	
+    .yt {	
+        width: 17px;	
+    }	
+    .inst {	
+        width: 14px;	
+    }	
+    .us {	
+        width: 10px;	
+        height: 13px; 	
+    }	
+    #top.wrap {	
+        margin-bottom: 87px;	
+    }	
+    .title {	
+        font-size: 29px;	
+    }	
+    .title__behind {	
+        top: -42px;	
+    }	
+    .bio {	
+        margin-bottom: 90px;	
+        .title {	
+            margin-bottom: 33px;	
+        }	
+        &-deviz {	
+            padding: 89px 36px;	
+            &__text {	
+                max-width: 236px;	
+                text-align: left;	
+                margin-bottom: 0;	
+            }	
+        }	
+        &__block {	
+            padding: 80px 47px 80px 90px;	
+        }	
+        .logo {	
+            font-size: 32px;	
+            margin-top: -10px;	
+        }	
+        &__name {	
+            margin-bottom: 17px;	
+        }	
+        &__position {	
+            padding-bottom: 10px;	
+            margin-bottom: 25px;	
+            li {	
+                margin-bottom: 2px;	
+            }	
+        }	
+        &__item {	
+            line-height: 1.5;	
+        }	
+        &__slider {	
+            padding-bottom: 23px;	
+        }	
+    }	
+    .consult {	
+        margin-bottom: 29px;	
+        .subtitle {	
+            letter-spacing: 0.05em;	
+            font-size: 16px;	
+        }	
+        &__body {	
+            padding: 40px 18px 40px 22px;	
+        }	
+        &__cite {	
+            max-width: 410px;	
+            padding-bottom: 4px;	
+            .logo {	
+                position: relative;	
+                left: -5px;	
+            }	
+        }	
+        &__text {	
+            max-width: 328px;	
+            font-size: 20px;	
+            line-height: 43px;	
+            /* or 217% */	
+            letter-spacing: 0.01em;	
+        }	
 
-@media only screen and (max-width: 1340px) {
+         &__about .btn {	
+            margin-top: 19px;	
+        }	
+        &__nav {	
+            padding-bottom: 6px;	
+        }	
+        &__slider-wrap {	
+            width: 50%;	
+            padding-left: 12px;	
+        }	
+        &__slider-caption {	
+            margin-bottom: 31px;	
+        }	
+        &__content {	
+            line-height: 1.6;	
+            letter-spacing: 0.01em;	
+        }	
+        &__position {	
+            letter-spacing: 0.01em;	
+        }	
+    }	
+    .events {	
+        margin-bottom: 78px;	
+        .title {	
+            margin-bottom: 24px;	
+        }	
+        &__block {	
+            padding: 98px 52px 40px 22px;	
+        }	
+        &__name {	
+            margin-bottom: 24px;	
+        }	
+        &__position {	
+            padding-bottom: 0px;	
+            &--top {	
+                margin-bottom: 25px;	
+                padding-bottom: 3px;	
+            }	
+        }	
+        &__video {	
+            margin-top: 37px;	
+            span:before {	
+                bottom: -4px;	
+            }	
+        }	
+    }	
+    .diploms {	
+        .title {	
+            margin-bottom: 0;	
+        }	
+        &__wrap {	
+            padding: 0px 12px;	
+        }	
+        &__item img {	
+            height: 100%;	
+            max-height: 302px;	
+        }	
+        &__slider .slick-dots {	
+            display: block;	
+            margin-top: -25px;	
+        }	
+        &__slider .arrow-prev {	
+            left: 44%;	
+        }	
+        &__wrap {	
+            margin-bottom: 56px;	
+        }	
+    }	
+    .footer {	
+        padding: 27px 19px 35px 23px;	
+        &__contact {	
+            max-width: 200px;	
+            word-wrap: break-word;	
+        }	
+        .logo {	
+            margin-bottom: 6px;	
+            padding-left: 13px;	
+        }	
+        &__center {	
+            padding-left: 0;	
+        }	
+    }	
+    .rights {	
+        max-width: 250px;	
+        text-align: center;	
+    }	
+
+}	
+@media only screen and (max-width: 1279px) {	
+    .header-bottom {	
+        padding: 0;	
+    }	
+    .ph {	
+        width:17px;	
+        height:17px; 	
+    }	
+    .ml {	
+        width:20px;	
+        height:15px; 	
+    }
     .main-title {
         font-size: 60px;
         line-height: 80px;
@@ -67,6 +291,9 @@
     }
     .nav {
         position: relative;
+    }
+    .main-menu ul {	
+        padding-right: 0;	
     }
     .lang {
         display: none;
@@ -404,15 +631,109 @@
 @media only screen and (max-width: 980px) {
     header {
         // min-height: 677px;
+        min-height: 985px;	     
+        padding-bottom: 27px;
         background-repeat: no-repeat;
+    }
+    .header-social {	
+        padding-left: 18px;	
+    }	
+    .header-bottom .social__icon {	
+        margin-right: 14px;	
+    }	
+    .title__behind {	
+        top: -47px;	
+    }	
+    .yt {	
+        width: 20px	
+    }	
+    .inst {	
+        width: 18px;	
+    }	
+    .us {	
+        width: 15px;	
+        height: 18px;	
+    }	
+    .download-viz {	
+        padding-right: 0;	
+    }	
+    .btn-scroll {	
+        padding-bottom: 64px;	
+        &:before {	
+            height: 50px;	
+        }	
+    }	
+    .title {	
+        font-size: 38px;	
+    }	
+
+     .nav {	
+        margin-bottom: 14px;	
+    }	
+    .main-title {	
+        margin-bottom: 6px;	
+    }	
+    .subtitle {	
+        font-size: 16px;	
     }
     .bio {
         &-deviz {
             min-height: 666px;
         }
+        &__text {	
+            max-width: 380px;	
+        }
         &__block {
             padding: 74px 30px 87px;
         }
+        .logo {	
+            margin-top: 25px;	
+            margin-right: 20px;	
+        }	
+        &__position li {	
+            margin-bottom: 10px;	
+        }	
+    }	
+    .consult {	
+        margin-bottom: 33px;	
+        &__text {	
+            max-width: 348px;	
+            font-size: 24px;	
+        }	
+        &__body {	
+            padding-top: 87px;	
+        }	
+        &__cite {	
+            max-width: 533px;	
+            padding-bottom: 47px;	
+        }	
+        &__position {	
+            max-width: 537px;	
+        }	
+        &__about .btn {	
+            margin-top: 34px;	
+        }	
+        &__slider-caption {	
+            margin-bottom: 39px;	
+        }	
+    }	
+    .events {	
+        &__name {	
+            margin-bottom: 50px;	
+        }	
+        &__video {	
+            margin-top: 51px;	
+            span {	
+                font-weight: 400;	
+                &:before {	
+                    bottom: -9px;	
+                }	
+            }	
+        }	
+
+     }	
+    .diploms__slider .slick-dots {	
+        margin-top: -17px;
     }
     .footer {
         text-align: center;
@@ -420,9 +741,15 @@
             flex-direction: column;
         }
         &__contact {
+            max-width: none;	
+            margin-left: auto;	
+            margin-right: auto;
             margin-bottom: 28px;
             .logo {
                 display: block;
+            }
+            .phone-mask {	
+                text-align: center;	
             }
         }
         &__center {
@@ -482,9 +809,9 @@
             margin-bottom: 75px;
             padding: 0 20px;
         }
-        &__slider .slick-dots {
-            margin-top: 42px;
-        }
+        // &__slider .slick-dots {
+        //     margin-top: 42px;
+        // }
         &__slider {
             .arrow {
                 &-prev {
@@ -641,10 +968,15 @@
         .title {
             margin-bottom: 9px;
         }
+        .logo {	
+            margin-top: -5px;	
+            margin-right: 0;	
+        }
         &-deviz {
             min-height: 325px;
-            padding: 8px 19px;
+            padding: 10px 19px;
             &__text {
+                padding-right: 23px;
                 font-size: 14px;
                 line-height: 28px;
                 margin-bottom: 0;
@@ -694,9 +1026,12 @@
             }
         }
         &__video {
+            margin-left: 28px;
             bottom: -60px;
         }
-
+        .slick-arrow {	
+            bottom: -33px;	
+        }
     }
   .events-deviz {
         padding: 8px 19px;
@@ -708,7 +1043,7 @@
             margin-top: 9px;
         }
         &__body {
-            padding: 34px 9px 10px 9px;
+            padding: 34px 12px 10px 9px;
         }
         &__slider-caption {
             margin-bottom: 23px;
@@ -727,6 +1062,9 @@
         }
         &__about {
             padding-top: 58px;
+            p {	
+                line-height: 1.5;	
+            }
         }
         &__text {
             font-size: 18px;
@@ -741,7 +1079,8 @@
             margin-bottom: 55px;
             .logo {
                 position: absolute;
-                right: 24px;
+                text-align: right;
+                right: 27px;
                 bottom: 0;
                 font-size: 25px;
                 line-height: 25px;
@@ -750,7 +1089,7 @@
         &__about {
             margin-bottom: 0;
             .btn {
-                margin: 21px auto;
+                margin: 34px auto 22px;
                 display: block;
                 max-width: 270px;
             }
@@ -818,7 +1157,7 @@
                 bottom: -16px;
             }
             .slick-dots {
-                margin-top: 37px;
+                margin-top: -21px;
             }
             .arrow-prev {
                 left: 25%;

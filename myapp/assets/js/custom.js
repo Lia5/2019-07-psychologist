@@ -165,7 +165,7 @@ $('.video__item').click(function (){
     })(jQuery);
 
 //popup
-
+console.log('Дизайн и разработка — insaim.ru');
 
 
 let modalWrap = $('.modal__wrap');
@@ -194,7 +194,6 @@ $(".modal-open").click(function (e){
             $('.modal').removeClass('flex');
           }, 800);  
           var yt = $('#YouTube').attr('src');
-          console.log(yt);
         $('#YouTube').attr('src', " ");
         $('#YouTube').attr('src', yt);
 
@@ -217,7 +216,6 @@ $(".modal-open").click(function (e){
                 $('.modal').removeClass('flex');
             }, 800); 
             var yt = $('#YouTube').attr('src');
-            console.log(yt+"ujkhh");
             $('#YouTube').attr('src', " ");
             $('#YouTube').attr('src', yt);
             
@@ -254,7 +252,7 @@ $(".modal-open").click(function (e){
 				$('*[data-anim="'+ dataName + '"]').removeClass('active');
 				$('[data-anim="'+ dataName + '"]').addClass('active');
 			} else {
-                $('*[data-anim="'+ dataName + '"]').removeClass('active');
+
             }
 
 		});

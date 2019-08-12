@@ -76,12 +76,36 @@
                     &:after {
                         content: "";
                         position: absolute;
-                        bottom: 1px;
+                        bottom: 2px;
                         left: 0;
                         width: 100%;
                         height: 1px;
                         background: #97DFEC;
                     }
+
+                }
+            }
+            .consult__nav {
+                &:hover {
+                    cursor: pointer;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 2px;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background: #97DFEC;
+                    }
+                }                 
+            }
+            .slick-slide {
+                text-align: center;
+                &:first-child {
+                    text-align: left;
+                }
+                &:last-child {
+                    text-align: right;
                 }
             }
         }
