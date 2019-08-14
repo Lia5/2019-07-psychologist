@@ -134,6 +134,9 @@ header {
         display: flex;
         align-items: center;
     }
+    .logo a:hover:after {
+        border-color: transparent;
+    }
     a {
         display: block;
         padding: 20px 35px;

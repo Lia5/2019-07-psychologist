@@ -620,7 +620,7 @@
     .diploms .title {
         margin-bottom: 30px;
     }
-    #modalEvents {
+    div[id^="modalEvents-"] {
         .modal__wrap {
             max-width: 854px;
         }
@@ -773,7 +773,7 @@
     .main-menu a {
         padding: 11px 30px;
     }
-    #modalEvents {
+    div[id^="modalEvents-"] {
         .modal__wrap {
             max-width: 100%;
         }
@@ -992,6 +992,7 @@
             min-height: 325px;
             padding: 10px 19px;
             &__text {
+                max-width: none;
                 padding-right: 23px;
                 font-size: 14px;
                 line-height: 28px;
@@ -1030,13 +1031,13 @@
         .arrow {
             &-next {
                 right: auto;
-                left: calc(50% + 24px);
+                left: calc(50% + 11px);
                 margin-right: -50%;
                 transform: translate(-50%, 0);
             }
             &-prev {
                 right: auto;
-                left: calc(50% - 24px);
+                left: calc(50% - 38px);
                 margin-right: -50%;
                 transform: translate(-50%, 0), rotate(180deg);
             }
@@ -1046,7 +1047,7 @@
             bottom: -60px;
         }
         .slick-arrow {	
-            bottom: -33px;	
+            bottom: -43px;	
         }
     }
     .events-deviz {

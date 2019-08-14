@@ -1,5 +1,5 @@
-$(function() {
-
+jQuery(document).ready( function($){
+    console.log('Дизайн и разработка — insaim.ru');
     //scroll 1 screen 
     $(".btn-scroll").click(function (e){
         e.preventDefault();
@@ -139,13 +139,11 @@ $(function() {
     }
 //video
 
-$('.video__item').click(function (){
-    console.log($(this));
-    var href = $(this).children().children().data('video');
-    console.log(href);
-    console.log($(this));
+$('.video__item').click(function (e){
+    e.preventDefault();
+    var href = $(this).children().data('video');
     $(this)
-    .addClass('active').siblings().removeClass('active').children().data('video');
+    .addClass('active').siblings().removeClass('active').data('video');
 
     $('#YouTube').attr('src', href);
 });
@@ -165,7 +163,7 @@ $('.video__item').click(function (){
     })(jQuery);
 
 //popup
-console.log('Дизайн и разработка — insaim.ru');
+
 
 
 let modalWrap = $('.modal__wrap');
