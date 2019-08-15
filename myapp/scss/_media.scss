@@ -14,7 +14,7 @@
 
 @import "vars";
 @media only screen and (max-width: 1819px) {
-    #top.wrap {
+    #top {
         padding-top: 0;
     } 
 }
@@ -35,6 +35,14 @@
                 min-width: 306px;
             }
         }
+    }
+    .header {
+        width: 54%;
+    }
+    .main-title {
+        font-size: 60px;
+        line-height: 80px;
+        margin-bottom: 8px;
     }
 }
 @media only screen and (max-width: 1580px) {
@@ -83,6 +91,8 @@
     }	
     .main-title {	
         font-size: 59px;	
+        line-height: 1;
+        margin-bottom: 10px;
     }	
     .subtitle {	
         font-size: 14px;	
@@ -94,7 +104,7 @@
         }	
     }	
     .btn-scroll {	
-        top: 26px;	
+        top: 0;	
         padding-bottom: 42px;	
         &:before {	
             height: 35px;	
@@ -113,7 +123,7 @@
         width: 10px;	
         height: 13px; 	
     }	
-    #top.wrap {	
+    #top {	
         margin-bottom: 87px;	
     }	
     .title {	
@@ -273,6 +283,9 @@
 
 }	
 @media only screen and (max-width: 1279px) {	
+    header {
+        border: none;
+    }
     .header-bottom {	
         padding: 0;	
     }	
@@ -413,14 +426,14 @@
         }
     }
     .btn-scroll {
-        top: -31px;
+        top: -56px;
     }
     .download-viz {
         padding-right: 10px;
         font-size: 14px;
         line-height: 17px;
     }
-    #top.wrap {
+    #top {
         margin-bottom: 78px;
     }
     .bio {
@@ -976,7 +989,7 @@
         font-size: 30px;
         line-height: 40px;
     }
-    #top.wrap {
+    #top {
         margin-bottom: 49px;
     }
     .bio {
@@ -1297,6 +1310,27 @@
         font-size: 14px;
     }
 }
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) and (min-height: 1300px) {
+    header {
+        background-position: top right -266px;
+    }
+    .consult__cite {
+        margin: 0 auto 40px;
+    }
+    .consult__position {
+        padding-bottom: 43px;
+    }
+    .consult__about .btn {
+        margin-top: 40px;
+    }
 
+}
+@media screen and (max-width: 375px) and (min-height: 812px) and (max-height: 1024px) {
+    header {
+        background-size: 174%;
+        background-position: top center;
+    }
+    .btn-scroll {
+        top: -73px;
+    }
 }

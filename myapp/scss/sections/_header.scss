@@ -17,6 +17,8 @@ nav {
     display: none;
 }
 header {
+    border: 50px solid #fff;
+    border-bottom: none;
     padding: 18px 34px 18px 27px;
     height: 100%;
     display: flex;
@@ -49,10 +51,10 @@ header {
     }
 
 }
-#top.wrap {
-    max-width: 1819px;
+#top {
+    max-width: 100%;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 0;
     margin-bottom: 118px;
     height: 100vh;
     min-height: 450px;
@@ -130,16 +132,21 @@ header {
     display: none;
 }
 .main-menu {
+    font-size: 14px;
     ul {
         display: flex;
         align-items: center;
+    }
+    .logo {
+        font-size: 40px;
+        padding: 0 50px;
     }
     .logo a:hover:after {
         border-color: transparent;
     }
     a {
         display: block;
-        padding: 20px 35px;
+        padding: 20px 26px;
         position: relative;
         &:hover {
             opacity: 0.8;
@@ -250,7 +257,7 @@ header {
 }
 .btn-scroll {
     position: absolute;
-    top: -36px;
+    top: -70px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, 0);
