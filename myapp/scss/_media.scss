@@ -65,19 +65,20 @@
         height: auto;
     }
 }
-
+@media only screen and (max-width: 1370px) {
+    .main-menu a {
+        padding: 20px 15px;
+    }
+}
 @media only screen and (max-width: 1340px) {	
     header {	
-        max-width: 1236px;	
         padding: 20px 16px 6px 5px;	
         // min-height: 688px;	
     }	
     .nav {	
         font-size: 14px;	
     }	
-    .main-menu a {	
-        padding: 20px 22px;	
-    }	
+
     .ph {	
         width:11px;	
         height:11px; 	
@@ -1325,12 +1326,18 @@
     }
 
 }
-@media screen and (max-width: 375px) and (min-height: 812px) and (max-height: 1024px) {
+@media screen and (max-width: 400px) and (min-height: 712px) and (max-height: 1024px) {
     header {
         background-size: 174%;
         background-position: top center;
     }
     .btn-scroll {
         top: -73px;
+    }
+}
+@media screen and (min-width: 580px) and (max-width: 610px) and (max-height: 915px) {
+    header {
+        background-size: cover;
+        background-position: top center;
     }
 }
