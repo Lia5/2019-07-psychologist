@@ -16,6 +16,9 @@ nav {
 .menu-toggle {
     display: none;
 }
+#top {
+    background-color: #e7e7e7;
+}
 header {
     border: 50px solid #fff;
     border-bottom: none;
@@ -24,7 +27,7 @@ header {
     display: flex;
     flex-direction: column;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     position: relative;
     margin: 0 auto;
     display: flex;
